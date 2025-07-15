@@ -119,6 +119,12 @@ Aby sprawdzić, ile znaków ma tekst, używamy `len()`:
 
 Zajrzyj do dokumentacji - metody String. Możesz skorzystać z Google, nie pytaj jednak o rozwiązanie AI - spróbuj ruszyć głową!
 
+{% include bookmark.html 
+    url="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+    title="Text Sequence Type – str"
+    desc="Dokumentacja typu tekstowego w Pythonie"
+%}
+
 - Utwórz zmienną, która będzie przechowywać imię pupila, a następnie wyświetl informację "Pogłaszcz {imie_pupila}, ucieszy się".
 - Zapisz swoje imię i nazwisko do dowolnej zmiennej. Ile znaków ma Twoje imię i nazwisko?
 - Zmień wszystkie litery imienia i nazwiska na drukowane.

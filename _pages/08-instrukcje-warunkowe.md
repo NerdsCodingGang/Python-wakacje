@@ -96,7 +96,7 @@ Poproś o wiek i przypisz kategorię:
 Zapisz do zmiennej tajną liczbę (np. 7). Poproś użytkownika o zgadnięcie.
 Wypisz "Za mało", "Za dużo", lub "Brawo!" w zależności od odpowiedzi.
 
-### 🔹 Zadanie 4 ⭐️
+### ⭐️ Zadanie 4 
 Rozszerzmy zadanie powyzej. Wylosuj (poszukaj biblioteki `random`) liczbę i zapisz do zmiennej.
 Poproś użytkownika o zgadnięcie.
 Wypisz ciepło - zimno w zależności od odpowiedzi.

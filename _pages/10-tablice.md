@@ -218,7 +218,7 @@ for friend in friends:
     print(friend)
 ```
 
-To jest najbardziej pythonowy (pythoński) sposób!
+To jest najbardziej pythonowy (prawdziwie pythoński) sposób!
 
 Przećwiczmy to jeszcze wracając do naszej wiadomości. Powiedzmy, że chcemy ją spersonalizować i wyświetlić, np.
 
