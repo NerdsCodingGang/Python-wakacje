@@ -1,5 +1,5 @@
 ---
-title: 7. Dane wejściowe i manipulacja tekstem
+title: 7. Dane wejściowe i teksty
 layout: post
 ---
 
