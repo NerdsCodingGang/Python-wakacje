@@ -3,7 +3,7 @@ title: 10. Listy
 layout: post
 ---
 
-Zmienne, które dotychczas poznałaś, zawierały tylko jeden element - string, liczbę, czy wartość logiczną. Czasami jednak musimy skorzystać z całej listy danych. Do ich przechowywania służą nam listy.
+Zmienne, które dotychczas uzywamy, zawierały tylko jeden element - string, liczbę, czy wartość logiczną. Czasami jednak musimy skorzystać z całej listy danych. Do ich przechowywania służą nam listy.
 
 ```python
 lista = ["pomarańcza", 34, True, "mandolina", 45, [67, 56, "czerwony"]]
@@ -222,7 +222,7 @@ To jest najbardziej pythonowy (prawdziwie pythoński) sposób!
 
 Przećwiczmy to jeszcze wracając do naszej wiadomości. Powiedzmy, że chcemy ją spersonalizować i wyświetlić, np.
 
-"Cześć Michał! Miło nam Cię powitać na kursie Pythona!"
+> "Cześć Michał! Miło nam Cię powitać na kursie Pythona!"
 
 Wystarczy do naszej wcześniejszej pętli dodać brakujący tekst powitania:
 
@@ -239,7 +239,7 @@ for friend in friends:
     print("Cześć " + friend + "! Miło nam Cię powitać na kursie Pythona!")
 ```
 
-### Zadanie:
+### Zadanie
 
 Używając pętli `for` spraw, aby w konsoli pojawił się napis witający na kursie Pythona wszystkie osoby zapisane w Twojej liście "group". Tekst ma być następujący: "Cześć \[tu imię osoby\]! Miło nam Cię powitać na kursie Pythona!".
 
@@ -264,7 +264,7 @@ To wypisze:
 6: Kasia
 ```
 
-### Zadanie:
+### Zadanie
 
 Wykorzystując pętlę znajdź i wypisz wszystkie samogłoski ze zdania: 
 
@@ -312,7 +312,7 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
-### Zadanie końcowe:
+### Zadanie
 
 Stwórz listę zawierającą liczby od 1 do 10, następnie:
 1. Dodaj liczbę 11 na koniec

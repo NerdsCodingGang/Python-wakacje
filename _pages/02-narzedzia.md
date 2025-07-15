@@ -49,7 +49,7 @@ Aby otworzyć **Terminal**:
 - Naciśnij jednocześnie **cmd ⌘ + spacja** i wpisz `Terminal`, potem naciśnij **Enter**
 - Albo: Applications → Utilities → Terminal
 
-![Terminal Mac](./assets/step-1b.png){:title="Terminal MacOS" class="img-responsive"}
+![Terminal Mac]({{ site.baseurl }}/assets/step-1b.png){:title="Terminal MacOS" class="img-responsive"}
 
 📝 Kolor terminala możesz zmienić w lewym górnym rogu w zakładce *Preferences* → *Profiles*
 

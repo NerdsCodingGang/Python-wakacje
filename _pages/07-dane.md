@@ -46,7 +46,7 @@ Dzięki temu możemy „wyciągać” pojedyncze litery lub fragmenty tekstu.
 Jest to tzw. indeksowanie. 
 
 
-![Indeksowanie](../assets/step-3b.png){:title="Indeksowanie sekwencji" class="img-responsive"}
+![Indeksowanie]({{ site.baseurl }}/assets/step-3b.png){:title="Indeksowanie sekwencji" class="img-responsive"}
 
 ```
 >>> seq = "Monty Python"
