@@ -1,8 +1,5 @@
 ---
-title: JavaScript
-author: girlsjs
-date: 2023-06-01
-category: content
+title: Test page
 layout: post
 ---
 
