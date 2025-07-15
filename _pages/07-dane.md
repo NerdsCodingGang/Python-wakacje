@@ -30,7 +30,7 @@ Można to też zapisać krócej:
 
 
 
-## 🧪 Zadania z input()
+## 🧪 Zadania
 
 1. Przypisz swoje imię do zmiennej `my_name`
 2. Przypisz swoje nazwisko do `my_surname`

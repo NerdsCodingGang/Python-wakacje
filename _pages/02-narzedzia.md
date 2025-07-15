@@ -38,7 +38,7 @@ W zależności od wersji systemu Windows jedna z poniższych metod powinna zadzi
 - Skrót: naciśnij klawisz **Windows** + **R**, wpisz `cmd`, naciśnij **Enter**
 - Menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń
 
-![Konsola Windows 10](../assets/step-1a.png){:title="Wiersz poleceń Windows 10" class="img-responsive"}
+![Konsola Windows 10](./assets/step-1a.png){:title="Wiersz poleceń Windows 10" class="img-responsive"}
 
 ---
 
@@ -49,7 +49,7 @@ Aby otworzyć **Terminal**:
 - Naciśnij jednocześnie **cmd ⌘ + spacja** i wpisz `Terminal`, potem naciśnij **Enter**
 - Albo: Applications → Utilities → Terminal
 
-![Terminal Mac](../assets/step-1b.png){:title="Terminal MacOS" class="img-responsive"}
+![Terminal Mac](./assets/step-1b.png){:title="Terminal MacOS" class="img-responsive"}
 
 📝 Kolor terminala możesz zmienić w lewym górnym rogu w zakładce *Preferences* → *Profiles*
 
