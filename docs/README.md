@@ -1,4 +1,4 @@
-# 🚀 Wyprawy kosmiczne – Nerds Coding Gang (2025)
+# 🚀 Nerds Coding Gang Python wakacyjny
 
 Repozytorium kursu **„Python od podstaw”**, realizowanego w ramach letnich warsztatów Nerds Coding Gang.  
 Materiały publikowane są jako strona internetowa zbudowana przy użyciu **GitHub Pages** i **Jekyll**.
@@ -24,9 +24,9 @@ Każdy plik `.md` to osobny rozdział, np.:
 
 ```
 _pages/
-├── 01-javascript.md
+├── 01-python.md
 ├── 02-narzedzia.md
-├── 03-konsola-przegladarki.md
+├── 03-konsola.md
 ...
 ```
 
@@ -70,7 +70,6 @@ Lokalnie dostępne pod `http://localhost:4000`.
 
 Prowadzenie: **Rita Łyczywek**  
 Organizacja: **Nerds Coding Gang**  
-Współtwórczynie: uczestniczki edycji 2025 🌠
 
 ---
 
