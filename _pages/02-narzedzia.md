@@ -38,7 +38,7 @@ W zależności od wersji systemu Windows jedna z poniższych metod powinna zadzi
 - Skrót: naciśnij klawisz **Windows** + **R**, wpisz `cmd`, naciśnij **Enter**
 - Menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń
 
-![Konsola Windows 10](./assets/step-1a.png){:title="Wiersz poleceń Windows 10" class="img-responsive"}
+![Konsola Windows 10]({{ site.baseurl }}/assets/step-1a.png){:title="Wiersz poleceń Windows 10" class="img-responsive"}
 
 ---
 
