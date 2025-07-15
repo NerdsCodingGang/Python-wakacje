@@ -1,143 +1,96 @@
 ---
-title: 7. Instrukcje warunkowe
+title: 8. Instrukcje warunkowe
 layout: post
 ---
 
-Niektóre wydarzenia dzieją się tylko wtedy, gdy zostanie spełniony jakiś warunek. Np. woda zacznie wrzeć, gdy osiągnie temperaturę 100 stopni, a drzwi otworzysz tylko wtedy, gdy masz pasujący klucz. Podobnie dzieje się w języku JavaScript - instrukcja warunkowa wykonuje wybrany kod, w zależności od tego czy wartość danego wyrażenia jest logiczną prawdą \(true\) czy logicznym fałszem \(false\).
-
-### if...else...
-
-Jak wygląda instrukcja warunkowa? Kluczowym elementem jest wyrażenie **if:**
-
-```js
-if (warunek) {
-
-    ...polecenie, które wykonuje się, gdy warunek jest spełniony
-}
-```
-
-np.
-
-```js
-let x = 34;
-
-if (x < 100) {
-    console.log('Liczba jest mniejsza od 100');
-}
-```
-
-```js
- if (x < 10) {
-     console.log('Liczba jest mniejsza od 10');
- }
-```
-
-Kolejny element instrukcji warunkowej to **else**, czyli polecenie, które wykonuje się jeśli jednak warunek nie jest spełniony.
-
-np.
-
-```js
-let x = 34;
-
-if (x < 100) {
-     console.log('Liczba jest mniejsza od 100');
-} else {
-     console.log('Liczba jest większa od 100');
-}
+Niektóre rzeczy dzieją się tylko wtedy, gdy zostanie spełniony konkretny warunek.  
+Na przykład: woda wrze, gdy osiągnie 100°C, a drzwi otwierają się, gdy masz klucz.  
+W programowaniu jest podobnie – dzięki instrukcjom warunkowym mówimy Pythonowi: *„Zrób coś, jeśli…”*.
 
 
-if (x < 10) {
-     console.log('Liczba jest mniejsza od 10');
-} else {
-     console.log('Liczba jest większa od 10');
-}
-```
+## 🧠 if...elif...else
 
-Możemy też sprawdzać kilka warunków jeden po drugim. Służy do tego **else if**,
+Instrukcja `if` sprawdza, czy warunek jest spełniony – jeśli tak, wykonuje wskazany kod.  
+Dodatkowo możemy użyć `elif` (czyli „jeśli nie to, ale…”) i `else` („jeśli żaden warunek nie pasuje”).
 
-```js
-if (x < 10) {
-     console.log('Liczba jest mniejsza od 10');
-}  else if (x > 10) {
-     console.log('Liczba jest większa od 10');
-} else {
-     console.log('Liczba jest równa 10');
-}
-```
+Przykład:
 
-W swoim pliku JS stwórz dwie zmienne o nazwach a i b. Przypisz do nich dwie różne liczby. Następnie zapisz następujący warunek: jeśli a jest większe od b, w konsoli powinien ukazać się napis "a jest większe od b". Jeśli b jest większe, w konsoli powinnaś zobaczyć "b jest większe od a".
+    x = 34
 
-### switch
+    if x < 10:
+        print("Liczba jest mniejsza od 10")
+    elif x < 100:
+        print("Liczba jest mniejsza od 100")
+    else:
+        print("Liczba jest większa lub równa 100")
 
-**Warunki można również sprawdzać za pomocą instrukcji switch.**
+📌 W Pythonie **nie używamy nawiasów `{}` jak w JavaScripcie** – zamiast tego bardzo ważne są **wcięcia (4 spacje)**.
 
-```js
-let language = 'Spanish';
+---
 
-switch (language) {
-    case 'English': 
-        console.log('Hello!');
-        break;
-    case 'French':
-        console.log('Salut');
-        break;
-    case 'Spanish':
-        console.log('Hola!');
-        break;
-    case 'Polish':
-        console.log('Cześć!');
-        break;
-    default:
-        console.log(`I don't know this language`);
-}
-```
+## 🧪 Zadanie
 
-Zauważ, że każdy przypadek kończy się słowem **break.** Break przerywa wykonywanie instrukcji switch. Oznacza to, że jeśli któryś ze wskazanych przypadków zostanie spełniony, dalsze porównania nie będą już wykonywane. Jeżeli pominiemy to słowo, wówczas nawet przy pomyślnym przyrównaniu zostaną wykonane kolejne sprawdzenia. Naszą instrukcję switch kończy specjalny przypadek **default**, który będzie wybierany, gdy wszystkie inne przypadki będą błędne.
+1. Stwórz dwie zmienne `a` i `b` i przypisz im różne liczby
+2. Napisz program, który:
+    - wypisze `"a jest większe"` jeśli `a > b`
+    - wypisze `"b jest większe"` jeśli `b > a`
+    - wypisze `"a i b są równe"` w przeciwnym wypadku
 
-### Zadanie:
+---
 
-Stwórz w swoim pliku JS zmienną o nazwie `weather` i przypisz do niej wartość "sun". Następnie, używając instrukcji `switch` spraw, aby w konsoli ukazał się następujący tekst:
+## 📊 Operatory porównania
 
-* gdy zmienna `weather` jest równa "sun" - "It's sunny! 🌞"
-* gdy zmienna `weather` jest równa "rain" = "It's raining! 🌧️"
-* gdy zmienna `weather` jest równa "wind" = "It's windy! 🌬️"
+| Operator | Opis                 | Przykład     | Wynik   |
+|----------|----------------------|--------------|---------|
+| `==`     | równe                | `x == 5`     | True    |
+| `!=`     | różne                | `x != 5`     | True    |
+| `>`      | większe niż          | `x > 5`      | False   |
+| `<`      | mniejsze niż         | `x < 5`      | True    |
+| `>=`     | większe lub równe    | `x >= 5`     | False   |
+| `<=`     | mniejsze lub równe   | `x <= 5`     | True    |
 
-Teraz przypisz do zmiennej `weather` wartość "rain" i zobacz, jak zmienia się tekst w konsoli. To samo sprawdź przypisując do niej wartość "wind".
+Uwaga: pojedynczy znak `=` służy **do przypisywania** wartości, a podwójny `==` do **porównywania**.
 
-**Instrukcja if..else... korzysta z operatorów porównania**
+---
 
-Nie zawsze wszystko jest albo większe albo mniejsze, albo równe. Może przecież być większe lub równe, mniejsze lub równe, itp. W JS mamy do dyspozycji następujące operatory porównania:
+## 🧪 Zadania z porównaniami
 
-`let x = 34;`
+1. Czy `23 + 3` to tyle samo co `15 + 11`?
+2. Czy `29 // 7` daje `4`?
+3. Czy `27 % 8` daje `3`?
 
-| Operator | Opis | Równanie | Zwróci |
-| :--- | :--- | :--- | :--- |
-| == | równe | x == 56 | false |
-| != | różne | x != 56 | true |
-| === | równa wartość i taki sam typ danych | x === 34 | true |
-|  |  |  |  |
-|  |  | x === "34" | false |
-| !== | różne wartości lub różny typ danych | x !== "34" | true |
-|  |  | x !== 34 | false |
-| &gt; | większe od | x &gt; 67 | false |
-| &lt; | mniejsze od | x &lt; 67 | true |
-| &gt;= | większe bądź równe od | x &gt;= 56 | false |
-| &lt;= | mniejsze bądź równe od | x &lt;= 56 | true |
+---
 
-Zwróć uwagę, że w JS pojedynczy znak równości przypisuje wartość np. do zmiennej. Z kolei podwójny znak równania == to porównanie dwóch wartości, a dokładniej sprawdzenie, czy są takie same.
+## 🔁 Operatory logiczne
 
-**Możemy też spotkać operatory logiczne:**
+Czasem chcemy sprawdzić więcej niż jeden warunek naraz.  
+Tu przydają się **operatory logiczne**:
 
-`let x = 34;`
+| Operator | Działanie | Przykład                     | Wynik  |
+|----------|-----------|------------------------------|--------|
+| `and`    | i         | `x > 0 and x < 100`          | True   |
+| `or`     | lub       | `x < 0 or x > 100`           | False  |
+| `not`    | zaprzeczenie | `not (x == 5)`            | True   |
 
-`let y = 13;`
+---
 
-| Operator | Opis | Przykład | Wynik |
-| :--- | :--- | :--- | :--- |
-| && | and \(i\) | \(x &lt; 100 && y &gt; 10\) | Prawda \(x jest mniejsze od 100 **i **y jest większe od 10\) |
-| II | or \(lub\) | \(x &gt; 80 II y &gt; 10\) | Prawda, bo x nie jest większe od 80, ale y jest większe od 10 |
-| ^ | xor \(jeden z, ale nie dwa równocześnie\) | \(x === 34 ^ y === 13\) | Fałsz, bo obydwa są prawdziwe |
-| ! | not \(negacja\) | !\(x == y\) | Prawda, bo negujemy to, że x == y |
+## 🧪 Zadania logiczne
 
+1. Sprawdź, czy liczba `x` mieści się w przedziale od 10 do 20
+2. Sprawdź, czy `x` jest większe od 100 **lub** równe 0
+3. Sprawdź, czy `x` nie jest równe `y`
 
+---
 
+## 🎯 Sprawdzanie wieku
+
+Poproś użytkownika o wiek i napisz program, który:
+
+- Jeśli użytkownik ma mniej niż 12 lat – wypisze „Jesteś dzieckiem”
+- Jeśli ma od 12 do 18 – wypisze „Jesteś nastolatką/nastolatkiem”
+- Jeśli ma więcej – wypisze „Jesteś dorosła/dorosły”
+
+Podpowiedź: pamiętaj, że `input()` zwraca tekst – trzeba przekonwertować go na liczbę za pomocą `int()`.
+
+W kolejnej lekcji poznamy **pętle** – czyli jak powtarzać kod automatycznie i bez ręcznego kopiowania.  
+To będzie początek Twojej przygody z automatyzacją! 🔁
