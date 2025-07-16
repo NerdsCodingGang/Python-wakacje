@@ -141,10 +141,11 @@ Patrząc na te przykłady... na czym polega konwersja typów?
 
 Stwórz zmienną z tekstem:
 ```
-    quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ```
 
-*Możesz skorzystać z Google, nie pytaj jednak o rozwiązanie AI - spróbuj ruszyć głową! 💡 *
+**Możesz skorzystać z Google, nie pytaj jednak o rozwiązanie AI - spróbuj ruszyć głową!** 💡 
+
 
 1. Wyświetl długość tekstu (liczbę znaków)
 2. Wyświetl pierwszą i ostatnią literę tekstu
@@ -155,14 +156,14 @@ Stwórz zmienną z tekstem:
 7. Policz, ile razy litera `"e"` występuje w tekście
 8. Zamień wszystkie litery na wielkie
 9. Odwróć cały ciąg znaków
-10. Utwórz nową zmienną `lorem_clean`, w której:
+10. Utwórz nową zmienną `txt_clean`, w której:
     - nie ma żadnych przecinków,
     - tekst zaczyna się dużą literą,
     - kończy się kropką (nawet jeśli wcześniej jej nie było)
 11. Sprawdź, czy tekst zawiera słowo `"dolor"`
 12. Podziel tekst na wyrazy i zapisz je jako listę
 
-💡 Pamiętaj, że możesz tworzyć kolejne zmienne pomocnicze, by nie nadpisywać  `quote = Lorem...`.
+💡 Pamiętaj, że możesz tworzyć kolejne zmienne pomocnicze, by nie nadpisywać  `txt = Lorem...`.
 
 
 W kolejnej lekcji nauczymy się podejmować decyzje w kodzie – czyli jak powiedzieć Pythonowi:  

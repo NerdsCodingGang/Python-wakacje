@@ -3,9 +3,10 @@ title: 14. Wszędzie są obiekty!
 layout: post
 ---
 
-**Uwaga:** To jest rozszerzenie kursu - obiekty nie są nam niezbędne do tworzenia fajnych programów, ale warto wiedzieć, że istnieją! 😊
-
 ... bo wszystko w Pythonie jest obiektem! To kolejny sposób organizowania danych. W Pythonie mamy coś podobnego do obiektów JavaScript - **słowniki** (które już znasz!) oraz prawdziwe **obiekty** (klasy).
+
+**Uwaga:** To jest rozszerzenie kursu - obiekty nie są nam niezbędne do tworzenia kolejnych elementów kursu, ale warto wiedzieć, że istnieją! 😊
+
 
 ## Słowniki jako "obiekty" - już to znasz!
 
@@ -66,7 +67,7 @@ Jak wyświetlić imię siostry?
 print(person['family']['sister'])
 ```
 
-## Prawdziwe obiekty - klasy (bonus dla ciekawskich!)
+## Prawdziwe obiekty - klasy
 
 W Pythonie możemy tworzyć prawdziwe obiekty używając **klas**. To jak szablon do tworzenia obiektów:
 
@@ -92,7 +93,7 @@ print(natalia.introduce())
 print(f"Hobby: {natalia.hobbies}")
 ```
 
-## Dlaczego obiekty są fajne?
+## Dlaczego obiekty są takie fajne?
 
 1. **Organizacja** - grupują powiązane dane
 2. **Czytelność** - `person['name']` mówi więcej niż `data[0]`
@@ -130,7 +131,7 @@ for title in find_available_books(library):
     print(f"- {title}")
 ```
 
-## Zadanie (opcjonalne!)
+## 🧪  Zadanie
 
 Stwórz słownik reprezentujący Twoją ulubioną grę:
 
@@ -153,10 +154,60 @@ def display_game_info(game):
     pass
 ```
 
-## Podsumowanie
 
 Obiekty (słowniki) to świetny sposób na organizację danych, ale nie są niezbędne! Wszystko, co możesz zrobić z obiektami, możesz też zrobić ze zwykłymi zmiennymi, listami i funkcjami. 
 
 Obiekty po prostu sprawiają, że kod jest bardziej czytelny i łatwiejszy do utrzymania w większych projektach! 🚀
 
-**Pamiętaj:** Nie musisz się tego uczyć na siłę - to tylko dodatkowe narzędzie w Twoim zestawie programistycznym!
+
+### 🧪 Zadanie
+
+W tym zadaniu pociwczymy korzystanie z obiektów stworzymy prostą logikę do **zarządzania swoją szafą**.  
+Każdy element garderoby będzie prawdziwym obiektem – z własnymi właściwościami i metodami.
+
+
+#### 👗 Krok 1: Zdefiniuj klasę `ClothingItem`
+
+Stwórz klasę `ClothingItem`, która będzie reprezentować jedno ubranie.  
+Każdy element powinien mieć:
+
+- `type` – typ ubrania (np. `"T-shirt"`, `"Jeans"`)
+- `color` – kolor (np. `"czarny"`)
+- `size` – rozmiar (np. `"M"`)
+- `season` – sezon, na który się nadaje (np. `"summer"`, `"winter"`, `"all"`)
+- `washed` – czy ubranie jest czyste (`True` lub `False`)
+
+Dodaj do klasy metody:
+
+- `describe()` – zwraca opis ubrania, np.:  
+  `"Czarny T-shirt w rozmiarze M na lato. Czysty."`
+- `wash()` – ustawia `washed` na `True`
+- `wear()` – ustawia `washed` na `False`
+
+
+
+#### 🧤 Krok 2: Wypełnij swoją szafę
+
+Stwórz kilka obiektów i dodaj je do listy `wardrobe`, np.:
+
+```python
+shirt = ClothingItem("T-shirt", "black", "M", "summer", True)
+jeans = ClothingItem("Jeans", "blue", "L", "all", False)
+wardrobe = [shirt, jeans]
+```
+
+Wyświetl opisy ubrań i „ubierz” niektóre z nich (czyli użyj wear()),
+a następnie sprawdź, które ubrania trzeba wyprać.
+
+#### 🧼 Krok 3: Dodatkowe funkcje
+Dodaj jedną lub więcej funkcji, które pomogą zarządzać szafą:
+
+```python
+def show_clean_clothes(wardrobe):
+    # wypisz tylko czyste ubrania
+    pass
+
+def show_season_clothes(wardrobe, season):
+    # wypisz ubrania odpowiednie na dany sezon
+    pass
+```

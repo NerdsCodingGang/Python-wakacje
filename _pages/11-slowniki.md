@@ -190,7 +190,7 @@ for klucz, wartosc in osoba.items():
 # >>> wiek: 25
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Stwórz słownik "ksiazka" zawierający informacje o Twojej ulubionej książce: tytuł, autor, rok wydania, liczba stron, gatunek. Następnie:
 1. Wypisz wszystkie informacje używając pętli
@@ -242,7 +242,7 @@ print(szkola["klasa_1a"])
 # >>> ["Anna", "Marek", "Kasia", "Paweł"]
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Stwórz słownik "oceny", gdzie kluczami będą nazwy przedmiotów (np. "matematyka", "fizyka", "chemia"), a wartościami listy ocen z tych przedmiotów. Następnie:
 1. Dodaj nową ocenę do matematyki
@@ -265,7 +265,7 @@ for uczen in uczniowie:
     print(f"{uczen['imie']} ma {uczen['wiek']} lat i chodzi do klasy {uczen['klasa']}")
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Stwórz listę "produkty" zawierającą słowniki z informacjami o produktach w sklepie (nazwa, cena, kategoria, dostępność). Następnie:
 1. Wypisz wszystkie produkty z kategorii "elektronika"
@@ -302,7 +302,7 @@ print(firma["pracownicy"]["jan_kowalski"]["stanowisko"])
 # >>> programista
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Stwórz słownik "biblioteka" reprezentujący system biblioteczny:
 - Klucze to tytuły książek

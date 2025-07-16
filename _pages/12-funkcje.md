@@ -99,7 +99,7 @@ painting_area(6, 5, 2.5)
 painting_area(3, 4, 2.5)
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 W swoim pliku Python napisz funkcję o nazwie `hello_nerds_coding_gang`, która po wywołaniu wyświetli następujący napis: "Cześć, [tu poda imię osoby podanej w wywołaniu]! Witaj na warsztatach!".
 

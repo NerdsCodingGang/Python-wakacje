@@ -3,13 +3,15 @@ title: 10. Listy
 layout: post
 ---
 
-Zmienne, które dotychczas uzywamy, zawierały tylko jeden element - string, liczbę, czy wartość logiczną. Czasami jednak musimy skorzystać z całej listy danych. Do ich przechowywania służą nam listy.
+Zmienne, które dotychczas uzywamy, zawierały tylko jeden element - string, liczbę, czy wartość logiczną. Czasami jednak musimy skorzystać z całej listy danych. Do ich przechowywania służą nam listy zwane tez tablicami.
 
 ```python
+pusta_lista = []
 lista = ["pomarańcza", 34, True, "mandolina", 45, [67, 56, "czerwony"]]
 ```
+Wyświetl te dwie zmienne.
 
-Listę tworzymy zapisując dane pomiędzy kwadratowymi nawiasami i oddzielając te elementy od siebie przecinkami. W liście możemy przechowywać różne typy danych: stringi, liczby, zmienne typu logicznego, a nawet inne listy.
+Jak widać, listę tworzymy zapisując dane pomiędzy kwadratowymi nawiasami i oddzielając te elementy od siebie przecinkami. W liście możemy przechowywać różne typy danych: stringi, liczby, zmienne typu logicznego, a nawet inne listy.
 
 Stwórzmy np. listę znajomych:
 
@@ -239,7 +241,7 @@ for friend in friends:
     print("Cześć " + friend + "! Miło nam Cię powitać na kursie Pythona!")
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Używając pętli `for` spraw, aby w konsoli pojawił się napis witający na kursie Pythona wszystkie osoby zapisane w Twojej liście "group". Tekst ma być następujący: "Cześć \[tu imię osoby\]! Miło nam Cię powitać na kursie Pythona!".
 
@@ -264,7 +266,7 @@ To wypisze:
 6: Kasia
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Wykorzystując pętlę znajdź i wypisz wszystkie samogłoski ze zdania: 
 
@@ -312,7 +314,7 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
-### Zadanie
+### 🧪 Zadanie
 
 Stwórz listę zawierającą liczby od 1 do 10, następnie:
 1. Dodaj liczbę 11 na koniec

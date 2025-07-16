@@ -16,6 +16,6 @@ Cześć! Cieszymy się, że chcesz rozpocząć z nami swoją przygodę z program
 
 Podczas naszego kursu nauczysz się podstaw składni, działania programów, a także tworzysz swoje pierwsze skrypty, nauczysz się zarządzać plikami i okięznasz AI 🚀.
 
-Gotowa? Gotowy? Zaczynamy!
+Gotowi? Zaczynamy!
 
 * ZACZNIJ TUTAJ ➡️ [O Pythonie](_pages/01-python.md)

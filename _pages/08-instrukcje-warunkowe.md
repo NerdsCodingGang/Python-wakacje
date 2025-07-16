@@ -19,7 +19,7 @@ if temperatura > 100:
 Komputer nie wie, czym jest wrzątek – ale potrafi porównać liczby i wykonać kod, jeśli spełniony jest warunek.
 
 
-## 🧠 if, elif, else – logika w kodzie
+## if, elif, else – logika w kodzie 🧠
 
 W Pythonie warunki zapisujemy za pomocą `if`, `elif` i `else`.  
 To trzy słowa kluczowe, które pozwalają sterować przebiegiem programu.
@@ -62,7 +62,7 @@ elif inny_warunek:
 else:
     # jeśli żaden nie działa, wykonaj to
 ```
-### Przetestuj!
+### Przetestuj! 🔎 
 
 Przekopiuj poniszy kod i umieść go w nowym pliku, uruchom i zobacz jak działa
 
@@ -81,10 +81,10 @@ else:
     print("Ocena: 2")
 ```
 
-### 🔹 Zadanie 1
+### 🧪 Zadanie 1
 Poproś użytkownika o dwie liczby. Sprawdź, która jest większa, albo czy są równe.
 
-### 🔹 Zadanie 2 
+### 🧪 Zadanie 2 
 Poproś o wiek i przypisz kategorię:
 
 - do 5: maluch
@@ -92,7 +92,7 @@ Poproś o wiek i przypisz kategorię:
 - 13–18: nastolatek
 - 19+: dorosły
 
-### 🔹 Zadanie 3 
+### 🧪 Zadanie 3 
 Zapisz do zmiennej tajną liczbę (np. 7). Poproś użytkownika o zgadnięcie.
 Wypisz "Za mało", "Za dużo", lub "Brawo!" w zależności od odpowiedzi.
 

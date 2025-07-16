@@ -21,13 +21,19 @@ print("Cześć! Miło nam Cię powitać na kursie Pythona!")
 
 Trochę dużo pisania, prawda? Możemy ten kod uprościć!
 
-### Pętla for z range()
+## Pętla for 
 
 Pętla for w Pythonie wygląda w następujący sposób:
 
 ```python
 for zmienna in sekwencja:
     kod który chcemy powtórzyć
+```
+Np. sprawdź ten kod:
+
+```python
+for litera in "długi tekst":
+    print("-", litera)
 ```
 
 Żeby powtórzyć coś określoną liczbę razy, możemy skorzystać z funkcji `range()`, która tworzy sekwencję liczb:
@@ -110,11 +116,11 @@ for i in range(1, 31):
     print(f"id-{i}")
 ```
 
-### Zadanie:
+### 🧪 Zadanie
 
 Wykorzystaj powyższą pętlę, by nadać id 50 książkom. Zapisz kod w swoim pliku Python.
 
-### Pętla while
+## Pętla while
 
 Oprócz pętli `for` w języku Python występuje pętla `while`, której struktura wygląda tak:
 
@@ -147,11 +153,11 @@ while counter > 0:
     counter -= 1
 ```
 
-### Zadanie:
+### 🧪 Zadanie
 
 W swoim pliku Python napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python jest super!".
 
-### Dodatkowe informacje o pętlach
+## Dodatkowe informacje o pętlach
 
 W Pythonie możemy również używać pętli `for` do iterowania po stringach, listach i innych sekwencjach:
 
@@ -169,7 +175,6 @@ for owoc in owoce:
 ```
 
 Te zastosowania poznasz w kolejnych lekcjach, ale warto już teraz wiedzieć, że pętle w Pythonie są bardzo wszechstronne!
-
 
 
 ### Kontrolowanie pętli - break i continue
@@ -250,14 +255,14 @@ for i in range(1, 11):
     print(f"Liczba nieparzysta: {i}")
 ```
 
-### Zadanie 1:
+### 🧪 Zadanie 1:
 
 Napisz pętlę, która przejdzie przez string "Programowanie w Pythonie" i:
 - Wypisze każdą literę
 - Zatrzyma się, gdy znajdzie literę "w"
 - Użyj `break` do zatrzymania pętli
 
-### Zadanie 2:
+### 🧪 Zadanie 2:
 
 Napisz pętlę, która przejdzie przez string "Hello World 123!" i:
 - Wypisze tylko litery (pomijając spacje, cyfry i znaki interpunkcyjne)
@@ -286,10 +291,10 @@ for znak in tekst:
     print(f"Znaleziono samogłoskę: {znak}")
 ```
 
-### Zadanie 3:
+### 🧪 Zadanie
 
 Napisz program, który:
-1. Przejdzie przez string "Uczę się programowania w roku 2024"
+1. Przejdzie przez string "Uczę się programowania w tym roku"
 2. Będzie szukał liter "p", "r", "o", "g", "r", "a", "m" w tej kolejności
 3. Pominie wszystkie inne znaki używając `continue`
 4. Zatrzyma się gdy znajdzie wszystkie litery słowa "program" używając `break`
@@ -324,7 +329,7 @@ while True:
     print("Nieprawidłowy wybór, spróbuj ponownie.")
 ```
 
-### Zadanie 4:
+### 🧪 Zadanie
 
 Napisz program z pętlą `while`, który:
 1. Pyta użytkownika o jego ulubiony kolor
