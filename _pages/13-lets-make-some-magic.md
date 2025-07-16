@@ -21,14 +21,55 @@ get_random_color()
 Uruchommy nasz program i zobaczmy co się wydarzyło. Pojawił się wpisany przez nas napis. Czas poszukać kolorów!
 
 ## Kolory w terminalu
+W terminalu możemy wyświetlać kolorowy tekst, używając specjalnych kodów zwanych kodami ANSI. Są to ciągi znaków, które zaczynają się od `\033[` i informują terminal, jak ma wyświetlić tekst – np. na czerwono, zielono albo niebiesko.
 
-W terminalu możemy wyświetlać kolorowy tekst używając specjalnych kodów ANSI. Przykładowo:
-- `\033[31m` - czerwony
-- `\033[32m` - zielony  
-- `\033[34m` - niebieski
-- `\033[0m` - reset koloru
+Spróbuj wpisać w swoim pliku Pythona:
 
-Ale my stworzymy prawdziwą magię! Będziemy generować losowe kolory RGB i przekształcać je na kody kolorów terminalowych.
+```python
+print("\033[31mTo jest czerwony tekst!\033[0m")
+print("\033[32mA to zielony!\033[0m")
+print("\033[34mA ten niebieski!\033[0m")
+
+```
+
+Zauważ:
+- 🔴 `\033[31m` = czerwony  
+- 🟢 `\033[32m` = zielony  
+- 🔵 `\033[34m` = niebieski  
+- ⬜ `\033[0m` = reset (czyli powrót do domyślnego koloru)
+
+
+
+*Zadziała w większości nowoczesnych terminali*
+Jeśli nie widzisz kolorów – spróbuj uruchomić plik przez VSC terminal albo ręcznie (np. `python magic.py`) zamiast wbudowanego edytora.
+
+### Co to jest RGB?
+RGB to skrót od Red, Green, Blue – czyli czerwony, zielony i niebieski. Skrót znany kazdemu, kto spróbował trochę zabawy z grafiką komputerową. Każdy kolor na ekranie komputera (i terminalu!) można stworzyć, mieszając te trzy kolory w różnych proporcjach. Na przykład:
+
+- RGB(255, 0, 0) = czysta czerwień
+- RGB(0, 255, 0) = czysta zieleń
+- RGB(0, 0, 255) = czysty niebieski
+- RGB(255, 255, 0) = żółty (czerwony + zielony)
+
+W terminalu możemy korzystać z pełnych kolorów RGB, jeśli użyjemy tzw. true color ANSI kodu, który wygląda tak:
+
+```
+\033[38;2;R;G;Bm
+```
+
+Przykład:
+
+```python
+print("\033[38;2;255;0;0mTo jest RGB czerwony!\033[0m")
+print("\033[38;2;100;200;255mTo jest kolor nie z tej ziemi!\033[0m")
+```
+
+✨ **A teraz… magia!** ✨ 
+
+Stworzymy prawdziwą magię! 
+
+Zamiast wybierać kolory ręcznie, stworzymy funkcję, która losuje kolor RGB i konwertuje go na kod ANSI.
+Będziemy generować losowe kolory RGB i przekształcać je na kody kolorów terminalowych.
 
 Zacznijmy od tego, by stworzyć funkcję generującą losowe wartości RGB:
 
@@ -48,7 +89,7 @@ Przetestujmy naszą funkcję:
 print(get_random_rgb())
 ```
 
-Świetnie! Teraz stworzymy funkcję, która przekształci nasze wartości RGB na kolor terminalowy:
+Świetnie! Teraz dodaj funkcję, która przekształci nasze wartości RGB na kolor terminalowy:
 
 ```python
 def rgb_to_terminal_color(red, green, blue):
@@ -182,7 +223,7 @@ def interactive_color_magic():
 interactive_color_magic()
 ```
 
-## Zadanie dla prawdziwych czarodziejów! 🧙‍♀️
+##  🧙‍♀️ Zadanie dla prawdziwych czarodziejów!
 
 Stwórz funkcję `magic_text_animation(text, duration=10)`, która:
 
@@ -228,4 +269,4 @@ rainbow_text("PYTHON MAGIC!")
 
 ✨ **Czy to nie jest magiczne?** ✨
 
-Teraz masz pełną kontrolę nad kolorami w terminalu! Możesz tworzyć tęczowe teksty, kolorowe menu, a nawet proste animacje. Pamiętaj - magia tkwi w kodzie, ale prawdziwa moc w kreatywności programisty!
+Teraz masz pełną kontrolę nad kolorami w terminalu! Możesz tworzyć tęczowe teksty, kolorowe menu, a nawet proste animacje. Pamiętaj - magia tkwi w kodzie, ale prawdziwa moc w kreatywności programisty! Baw się dalej! 
