@@ -1,5 +1,5 @@
 ---
-title: 10. Funkcje
+title: 12. Funkcje
 layout: post
 ---
 
@@ -99,7 +99,7 @@ painting_area(6, 5, 2.5)
 painting_area(3, 4, 2.5)
 ```
 
-### 🧪 Zadanie
+### 🧪 Zadanie 1
 
 W swoim pliku Python napisz funkcję o nazwie `hello_nerds_coding_gang`, która po wywołaniu wyświetli następujący napis: "Cześć, [tu poda imię osoby podanej w wywołaniu]! Witaj na warsztatach!".
 
@@ -108,3 +108,85 @@ W swoim pliku Python napisz funkcję o nazwie `hello_nerds_coding_gang`, która 
 hello_nerds_coding_gang('Anna')
 # >>> Cześć, Anna! Witaj na warsztatach!
 ```
+
+### 🧪 Zadanie 2
+
+Przeanalizuj poniższy kod
+
+```python
+def menu(option):
+    if option == 1:
+        print("Jeden")
+    elif option == 2:
+        print("Dwa")
+    elif option == 3:
+        print("Trzy")
+    elif option == 4:
+        print("Cztery")
+    else:
+        print("Ohooo")
+
+
+menu(1)
+choice = 2
+menu(choice)
+menu(4)
+```
+
+Następnie utwórz menu użytkownika, w zależności od wybranej kategorii dania, zaproponuj użytkownikowi posiłek.
+
+### 🧪 Zadanie 3
+Co na prezent? 🎁 - Stwórz listę pomysłów na prezent dla swoich bliskich. Kiedy nadarzy się okazja, aby dać im prezent (święta, urodziny, rocznicę), program losowo wybierze jeden (i być może miejsca, w których możesz go zdobyć).
+
+### 🧪 Zadanie 4
+```
+    +
+   +++
+  +++++
+ +++++++
++++++++++
+```
+
+- użytkownik podaje rodzaj znaku
+- użytkownik podaje wysokość choinki
+- znak użytkownika nie może być literą ani cyfrą
+
+### 🧪 Zadanie 5
+Zakoduj tajną wiadomość 🕵️
+```
+PYTHON JEST SUPER
+```
+
+- stwórz plik `secret1.py` zaawierający algorytm, który zmieni powyższą wiadomość w ciąg ”RZUIPO-KFTU-TWRFS”
+- wymyśl własny algorytm kodujący (możesz skorzystać z istniejących np. klasyczne/harcerskie) jako `secret2.py`
+- napisz program `secret3.py`, które odkoduje twoją wiadomość
+
+### 🧪 Zadanie 6
+Śledź robota 🤖 Robot porusza się w płaszczyźnie zaczynając od pierwotnego punktu (0,0). Robot może poruszać się w GÓRĘ, W DÓŁ, ​​W LEWO i W PRAWO, wykonując określone kroki. Ślad ruchu robota pokazano następująco:
+```
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+```
+Liczby po kierunku są krokami. Napisz program do odczytu wskazówek podanych jak wyżej i oblicz odległość od aktualnej do startowej pozycji. Jeśli odległość jest liczbą dziesiętną, wyświetl po prostu najbliższą liczbę całkowitą.
+
+Przykład:
+```
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+```
+
+Wynik: `3`
+
+### 🧪 Zadanie 7
+Stwórz grę inspirowaną miłosną wróżbą z czasów szkolnych. Zasady gry przedstawia to [wideo](https://www.youtube.com/watch?v=oFsLVG7EAZ4).
+1. Pobierz imiona zakochanych
+2. Policz wystąpienia każdej z liter w obu imionach oraz słowie LOVE.
+3. Redukuj liczbę elementów tablicy dodając pierwszą i ostatnią liczbę do siebie, tak długo, aż zostaną dwie cyfry.
+4. Dwie ostatnie cyfry tworzą wartość procentową dopasowania pary wg. wróżby.
+
+Mało? 
+Przejdź do kolejnej lekcji!
