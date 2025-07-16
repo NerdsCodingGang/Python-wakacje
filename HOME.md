@@ -12,12 +12,10 @@ Cześć! Cieszymy się, że chcesz rozpocząć z nami swoją przygodę z program
 - Nadaje się zarówno do automatyzacji, analizy danych, jak i tworzenia aplikacji.
 - Używają go największe firmy technologiczne – od Google po NASA.
 
-
-
 ![](./assets/snake.png)
-
-
 
 Podczas naszego kursu nauczysz się podstaw składni, działania programów, a także tworzysz swoje pierwsze skrypty, nauczysz się zarządzać plikami i okięznasz AI 🚀.
 
 Gotowa? Gotowy? Zaczynamy!
+
+* ZACZNIJ TUTAJ ➡️ [O Pythonie](_pages/01-python.md)
