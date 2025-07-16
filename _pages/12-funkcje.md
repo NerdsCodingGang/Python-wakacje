@@ -181,6 +181,9 @@ RIGHT 2
 
 Wynik: `3`
 
+![Wynik]({{ site.baseurl }}/assets/result.png)
+
+
 ### 🧪 Zadanie 7
 Stwórz grę inspirowaną miłosną wróżbą z czasów szkolnych. Zasady gry przedstawia to [wideo](https://www.youtube.com/watch?v=oFsLVG7EAZ4).
 1. Pobierz imiona zakochanych
