@@ -333,16 +333,36 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
+🧪 Zadanie: Najpotężniejsza liczba
+Masz listę liczb przedstawiających moc magicznych iskier:
+```
+moce = [3, 7, 2, 9, 5, 9, 4]
+```
+
+Twoim zadaniem jest:
+
+1. Wypisać wszystkie moce po kolei
+2. Znaleźć największą moc (czyli najpotężniejszą iskrę!)
+3. Wypisać wszystkie moce równe tej największej (jeśli jest ich więcej niż jedna)
+
+Spróbuj to zrobić za pomocą pętli bez metody `max()`
+
+> ##### 🧙‍♀️  WSKAZÓWKA
+>
+> Użyj zmiennej `max_moc`, która na początku ma wartość `0`.  
+> W pętli `for` porównuj każdą moc i aktualizuj `max_moc`, jeśli znajdziesz większą.
+{: .block-tip }
+
 ![]({{ site.baseurl }}/assets/elixir.gif)
 
 ### 🧪 Zadanie: Inwentarz eliksirów
 
-Profesor Infusor, mistrz naparów, zostawił na tablicy nieuporządkowaną listę eliksirów przygotowanych na czarodziejskie egzaminy. Twoim zadaniem jest uporządkować ją i nawarzyć 💥
+Profesor Infusora, mistrzni naparów, zostawiła na tablicy nieuporządkowaną listę eliksirów przygotowanych na czarodziejskie egzaminy. Twoim zadaniem jest uporządkować ją i nawarzyć 💥
 
 1. Stwórz listę `eliksiry` zawierającą tę listę (dodana ponizej)
 2. Dodaj nowy eliksir `"Eliksir Księżycowego Blasku"` na koniec listy
 3. Wstaw `"Eliksir Jedwabistego Snu"` na początek listy – to klasyk, który powinien być zawsze pierwszy!
-4. Usuń `"Mugolskie Krople"` – Profesor uznał, że to profanacja sztuki warzenia
+4. Usuń `"Mugolskie Krople"` – Profesor uznała, że to profanacja sztuki warzenia
 5. Wypisz w pętli wszystkie eliksiry z komentarzem `"✅ Gotowy"` przy każdym
 6. Posortuj listę alfabetycznie i wypisz jeszcze raz – teraz wszystko wygląda jak gotowe do prezentacji!
 
