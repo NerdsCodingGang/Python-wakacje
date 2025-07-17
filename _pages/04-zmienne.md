@@ -33,9 +33,9 @@ Zmienna to „etykietka” dla jakiejś wartości.
 Możemy jej nadać nazwę, pod którą przechowamy liczby, teksty lub inne dane, i potem używać tej nazwy wielokrotnie.
 
 Przykład:
-
-    wynik = 33 + 5
-
+```python
+ wynik = 33 + 5
+```
 W tym przypadku:
 
 - `wynik` to nazwa naszej zmiennej,
@@ -43,9 +43,9 @@ W tym przypadku:
 - po wykonaniu tej linii `wynik` **zawiera wartość 38**.
 
 Sprawdźmy:
-
-    print(wynik)
-
+```python
+print(wynik)
+```
 Python wypisze:
 
     38
@@ -66,8 +66,8 @@ Python wypisze:
 Zmienna nie musi mieć tej samej wartości przez cały czas.  
 Możemy przypisać nową wartość:
 ```python
-    wynik = 99
-    print(wynik)
+wynik = 99
+print(wynik)
 ```
 
 Efekt:
@@ -94,18 +94,19 @@ Ale to **nie jest zalecane**. Duże litery to umowa: „nie zmieniam tej wartoś
 ## Zadanie 🎯
 
 1. Utwórz dwie zmienne: `a` i `b`, np.:
-
-        a = 10
-        b = 5
+```python
+a = 10
+b = 5
+```
 
 2. Wypisz ich sumę:
-
-        print(a + b)
-
+```python
+print(a + b)
+```
 3. Nadpisz jedną z nich i wypisz sumę ponownie:
 
-        a = 100
-        print(a + b)
+    a = 100
+    print(a + b)
 
 4. Stwórz zmienną `PRZELICZNIK = 1.2` i **nie zmieniaj jej wartości** – to będzie Twoja stała.
 

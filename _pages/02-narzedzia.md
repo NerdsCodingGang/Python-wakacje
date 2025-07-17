@@ -70,6 +70,17 @@ Jeśli nie możesz znaleźć terminala – skorzystaj z wyszukiwarki lub wpisz `
 
 Zanim zaczniemy kodować – musimy upewnić się, że Python jest zainstalowany na Twoim komputerze.
 
+{% include bookmark.html 
+    url="https://www.python.org/downloads/"
+    title="Python Downloads"
+    desc="Oficjalna strona do pobrania Pythona dla wszystkich systemów operacyjnych"
+%}
+
+Jeśli instalujesz pythona na systemie **Windows** pamiętaj zaznaczyć opcję dodaj pythona do zmiennych systemowych.
+
+![Instalacja Windows]({{ site.baseurl }}/assets/py-win.png){:title="Instalacja Windows" class="img-responsive"}
+
+
 ### Sprawdzenie, czy Python już jest:
 
 W terminalu wpisz:

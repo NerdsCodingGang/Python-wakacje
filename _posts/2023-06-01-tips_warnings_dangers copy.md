@@ -62,3 +62,11 @@ Using a `{: .block-danger}` attribute:
 
 [1]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
 [2]: https://kramdown.gettalong.org/quickref.html#block-attributes
+
+### Example bookmark
+
+{% include bookmark.html 
+    url="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+    title="Text Sequence Type – str"
+    desc="Dokumentacja typu tekstowego w Pythonie"
+%}

@@ -13,13 +13,13 @@ Otwórz terminal lub wiersz poleceń na swoim komputerze.
 Wpisz komendę:
 
 ```
-    python
+python
 ```
 
 lub (na niektórych systemach):
 
 ```
-    python3
+python3
 ```
 
 Jeśli wszystko działa poprawnie, zobaczysz coś takiego:
@@ -35,6 +35,8 @@ Znak `>>>` to tzw. **prompt** Pythona – oznacza, że interpreter jest gotowy p
 📍 Wcześniej w konsoli systemowej znak zachęty miał postać np. `~$` lub `C:\>`.  
 Po uruchomieniu Pythona zmienia się on na `>>>`, co oznacza, że teraz rozmawiamy bezpośrednio z Pythonem.
 
+WAŻNE: W przykładach poniej nie przepisuj `>>>`, to tylko symbol znaku zachęty.
+
 ---
 
 ## Pierwszy kod w Pythonie 🐍
@@ -42,13 +44,13 @@ Po uruchomieniu Pythona zmienia się on na `>>>`, co oznacza, że teraz rozmawia
 Spróbuj wpisać:
 
 ```python
-    print("Hello, world!")
+>>> print("Hello, world!")
 ```
 
 Po naciśnięciu Enter zobaczysz:
 
 ```
-    Hello, world!
+Hello, world!
 ```
 
 Gratulacje! 🎉 Właśnie napisałaś/napisałeś swój pierwszy program w Pythonie.
@@ -62,14 +64,14 @@ Gratulacje! 🎉 Właśnie napisałaś/napisałeś swój pierwszy program w Pyth
 Python potrafi też liczyć.  
 Spróbuj wpisać kolejno:
 
-```
-    2 + 3
+```python
+>>> 2 + 3
 
-    10 - 4
+>>> 10 - 4
 
-    8 * 5
+>>> 8 * 5
 
-    12 / 4
+>>> 12 / 4
 ```
 
 Python odpowie:
@@ -95,7 +97,7 @@ Inaczej mówiąc: wszystko to już znasz – teraz uczysz się, jak powiedzieć 
 
 Aby zakończyć pracę z interpreterem, wpisz:
 ```
-    exit()
+>>> exit()
 ```
 lub naciśnij:
 
