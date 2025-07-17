@@ -19,10 +19,10 @@ if temperatura > 100:
 Komputer nie wie, czym jest wrzątek – ale potrafi porównać liczby i wykonać kod, jeśli spełniony jest warunek.
 
 
-## if, elif, else – logika w kodzie 🧠
+## Logika w kodzie 🧠
 
 W Pythonie warunki zapisujemy za pomocą `if`, `elif` i `else`.  
-To trzy słowa kluczowe, które pozwalają sterować przebiegiem programu.
+To trzy słowa kluczowe, które pozwalają sterować przebiegiem programu i decyzjami jakie podejmiemy
 
 ### `if` 
 
@@ -57,9 +57,20 @@ elif age < 18:
     print("Jesteś nastolatkiem")
 else:
     print("Jesteś dorosły/a")
+
+print("A to juz dalsza część programu")
 ```
 
-📌 Python **nie używa nawiasów klamrowych `{}` jak JavaScript czy C++** – tu bardzo ważne są **wcięcia (indentacja)**.  
+### Wcięcia mają znaczenie!
+
+📌 Jeśli znasz inne języki programowania, zauważysz, że Python **nie używa nawiasów klamrowych `{}` jak JavaScript czy C++**.  
+Tutaj **wcięcia (indentacja)** określają, które instrukcje należą do jakiego bloku kodu.
+
+> ##### WARNING
+>
+> Możesz używać **tabulacji** lub **czterech spacji**, ale nigdy obu naraz!  
+> Trzymaj się jednej konwencji w całym pliku, inaczej Python zgłosi błąd.
+{: .block-warning }
 
 ```
 if warunek:
@@ -87,6 +98,8 @@ elif score >= 45:
 else:
     print("Ocena: 2")
 ```
+
+Nie ma co gadać, trzeba poćwiczyć!
 
 ### 🧪 Zadanie 1
 Poproś użytkownika o dwie liczby. Sprawdź, która jest większa, albo czy są równe.
