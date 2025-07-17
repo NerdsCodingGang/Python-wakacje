@@ -162,9 +162,10 @@ Obiekty po prostu sprawiają, że kod jest bardziej czytelny i łatwiejszy do ut
 
 ### 🧪 Zadanie
 
-W tym zadaniu pociwczymy korzystanie z obiektów stworzymy prostą logikę do **zarządzania swoją szafą**.  
+W tym zadaniu pocwiczymy korzystanie z obiektów stworzymy prostą logikę do **zarządzania swoją szafą**.  
 Każdy element garderoby będzie prawdziwym obiektem – z własnymi właściwościami i metodami.
 
+![]({{ site.baseurl }}/assets/sabrina.gif)
 
 #### 👗 Krok 1: Zdefiniuj klasę `ClothingItem`
 
