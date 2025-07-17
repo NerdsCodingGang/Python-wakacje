@@ -80,8 +80,13 @@ Jeśli instalujesz pythona na systemie **Windows** pamiętaj zaznaczyć opcję d
 
 ![Instalacja Windows]({{ site.baseurl }}/assets/py-win.png){:title="Instalacja Windows" class="img-responsive"}
 
+Jeśli Python jest u Ciebie zainstalowany od dawna upewnij się, ze wersja jakiej uzywasz jest wyzsza niz `Python 3.8`  np. 3.8.1, 3.9, 3.10 i nowsze.
 
 ### Sprawdzenie, czy Python już jest:
+
+Po instalacji pamiętaj zamknąć terminal i otworzyć go ponownie. 
+
+*Jeśli posiadasz antywirusa na Windowsie (wiemy ze wymuszał to np. Kaspersky) moze zapytać o ponowne uruchomienie systemu - jest to ok! Uruchom ponownie i wykonaj ponizsze kroki.*
 
 W terminalu wpisz:
 
@@ -96,6 +101,6 @@ python3 --version
 Jeśli zobaczysz coś takiego:
 
 ```
-Python 3.12.3
+Python 3.11.3
 ```
 – to znaczy, że wszystko działa! 🎉
