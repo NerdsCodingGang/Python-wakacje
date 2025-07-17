@@ -283,15 +283,25 @@
   border: 1px solid #ddd;
   border-left: 4px solid #a552fd;
   padding: 1em;
-  border-radius: 10px;
   background: #fcfcfc;
   margin: 1.5em 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .bookmark-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bookmark-card a:hover {
+  text-decoration: none;
+}
+
+.bookmark-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .bookmark-card strong {
