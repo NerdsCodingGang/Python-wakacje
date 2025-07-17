@@ -13,9 +13,10 @@ Niestety, normalne edytory tekstu (właściwie procesory tekstu) jak Microsoft W
 
 Nie używamy programu do edycji dokumentów tekstowych (np. Word), ponieważ tego typu programy zapisują do plików znacznie więcej informacji niż tylko czysty tekst. W formatach dokumentów pojawiają się niewidoczne dla nas informacje o formatowaniu treści (styl tekstu, czcionka, rozkład marginesów itp.) zbędnych dla pliku pisanego w html. Niektóre z edytorów owszem, pozwalają na zapisanie pliku na potrzeby webowe, ale wynik będzie daleki od oczekiwanego.
 
+![VSC]({{ site.baseurl }}/assets/vsc-python.png){:title="VSC wtyczka Python" class="img-responsive"}
 Program, którego potrzebujesz to edytor tekstu lub edytor kodu. Na start polecamy przyjazny początkującym program VSC.
 
-Na pulpicie (lub w dowolnej innej lokalizacji) utwórz folder dla dzisiejszych zajęć o nazwie python_od_podstaw.
+Na pulpicie (lub w dowolnej innej lokalizacji) utwórz folder dla dzisiejszych zajęć o nazwie `python_od_podstaw`.
 
 Otwórz edytor. Wybierz Open > twój folder. Utwórz nowy plik z rozszerzeniem `.py`
 
