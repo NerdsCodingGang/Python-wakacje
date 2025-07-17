@@ -24,7 +24,9 @@ Komputer nie wie, czym jest wrzątek – ale potrafi porównać liczby i wykona�
 W Pythonie warunki zapisujemy za pomocą `if`, `elif` i `else`.  
 To trzy słowa kluczowe, które pozwalają sterować przebiegiem programu.
 
-### `if` – sprawdza, czy warunek jest spełniony:
+### `if` 
+
+– sprawdza, czy warunek jest spełniony:
 
 ```python
 age = 16
@@ -33,7 +35,9 @@ if age < 18:
     print("Jesteś niepełnoletni/a")
 ```
 
-### `elif` – sprawdzany tylko wtedy, gdy wcześniejszy warunek był fałszywy:
+### `elif` 
+
+– sprawdzany tylko wtedy, gdy wcześniejszy warunek był fałszywy:
 
 ```python
 if age < 12:
@@ -42,7 +46,9 @@ elif age < 18:
     print("Jesteś nastolatkiem")
 ```
 
-### `else` – wykonuje się tylko wtedy, gdy **żaden poprzedni warunek nie był spełniony**:
+### `else` 
+
+– wykonuje się tylko wtedy, gdy **żaden poprzedni warunek nie był spełniony**:
 
 ```python
 if age < 12:
@@ -54,6 +60,7 @@ else:
 ```
 
 📌 Python **nie używa nawiasów klamrowych `{}` jak JavaScript czy C++** – tu bardzo ważne są **wcięcia (indentacja)**.  
+
 ```
 if warunek:
     # kod do wykonania jeśli warunek jest True
@@ -85,18 +92,34 @@ else:
 Poproś użytkownika o dwie liczby. Sprawdź, która jest większa, albo czy są równe.
 
 ### 🧪 Zadanie 2 
-Poproś o wiek i przypisz kategorię:
 
-- do 5: maluch
-- 6–12: dziecko
-- 13–18: nastolatek
-- 19+: dorosły
+Stwórz program, który działa jak formularz używany przez Biuro Spraw Uczniowskich w Twojej Szkole Magii 🪄
+
+1. Zapytaj użytkownika o wiek (`input()`)
+2. Na podstawie podanego wieku przypisz mu jedną z kategorii magicznych:
+
+   - 0–6 lat → **Młody smok (maluch) - przyszły kandydat na czarodzieja** 🐣  
+   - 7–12 lat → **Uczniak (dziecko)** 📚  
+   - 13–18 lat → **Czarodziej w trakcie szkolenia** 🧙‍♀️  
+   - 19+ → **Absolwent czyli pełnoprawny członek społeczności magicznej (dorosły)** 🎓
+
+3. Wyświetl komunikat z przydziałem, np.:  
+   `"Witaj! Twój status: Czarodziej w trakcie szkolenia."`
+
+💡 Pamiętaj o konwersji typu (`int()`), bo dane z `input()` to zawsze tekst.
 
 ### 🧪 Zadanie 3 
-Zapisz do zmiennej tajną liczbę (np. 7). Poproś użytkownika o zgadnięcie.
-Wypisz "Za mało", "Za dużo", lub "Brawo!" w zależności od odpowiedzi.
+Zapisz do zmiennej **tajną liczbę** (np. `7`) — to jak ukryta liczba w zaklęciu.  
+Poproś użytkownika o zgadnięcie tej liczby, tak jakby próbował rzucić poprawne zaklęcie.
+
+W zależności od odpowiedzi wyświetl:
+
+- `"Zaklęcie za słabe!"` (jeśli liczba jest za mała)  
+- `"Zaklęcie za potężne!"` (jeśli za duża)  
+- `"Brawo! Trafiłeś dokładnie!"` (jeśli zgadł)
+
 
 ### ⭐️ Zadanie 4 
-Rozszerzmy zadanie powyzej. Wylosuj (poszukaj biblioteki `random`) liczbę i zapisz do zmiennej.
+Rozszerzmy zadanie powyzej 🎩 Wylosuj (poszukaj biblioteki `random`) liczbę i zapisz do zmiennej.
 Poproś użytkownika o zgadnięcie.
-Wypisz ciepło - zimno w zależności od odpowiedzi.
+Wypisz `ciepło - czujesz magię` i `zimno - brrr!` w zależności od odpowiedzi.
