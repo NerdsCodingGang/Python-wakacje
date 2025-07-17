@@ -30,16 +30,22 @@ Można to też zapisać krócej:
 
 
 
-## 🧪 Zadania
+### 🧪 Zadanie - Czy możesz dołączyć do szkoły magii?
 
-1. Przypisz swoje imię do zmiennej `my_name`
-2. Przypisz swoje nazwisko do `my_surname`
-3. Połącz imię i nazwisko w `full_name`
-4. Zapytaj użytkownika o imię i wiek
-5. Wyświetl powitanie oraz różnicę wieku między Tobą a użytkownikiem
+Stwórz program, który sprawdzi, czy użytkownik spełnia wiekowe kryteria przyjęcia do szkoły magii 🏰
 
+1. Przypisz swoje imię do zmiennej `my_name`  
+2. Przypisz swoje nazwisko do `my_surname`  
+3. Połącz imię i nazwisko w zmienną `full_name`  
+4. Zapytaj użytkownika o jego imię i wiek (za pomocą `input()`)  
+5. Wyświetl powitanie z imieniem użytkownika  
+6. Sprawdź, czy użytkownik ma od 11 do 17 lat włącznie  
+7. Wypisz:  
+   `You can join the school of magic: True`  
+   lub  
+   `You can join the school of magic: False`
 
-### Indeksowanie znaków
+## Indeksowanie znaków
 
 Każdy ciąg znaków w Pythonie (czyli `str`) ma swoje **indeksy** – numerację od 0.  
 Dzięki temu możemy „wyciągać” pojedyncze litery lub fragmenty tekstu.
@@ -91,14 +97,14 @@ reversed_string = cool_string[::-1]  # odwraca kolejność liter
 
 1. Stwórz zmienną z tekstem:
 
-        "The quick brown fox jumped over the lazy dog"
+        "Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it."
 
 2. Znajdź:
    - pierwszą literę
    - piątą literę
-   - ostatnią literę (użyj `len()` i `-1`)
-   - odwrócony ciąg (`[::-1]`)
-   - długość napisu (`len()`)
+   - ostatnią literę na dwa sposoby (użyj długości jak i indeksowania znaków)
+   - odwrócony ciąg 
+   - długość napisu
 
 ---
 
@@ -117,7 +123,7 @@ Aby porównać z liczbą, musimy przekonwertować dane:
 ```
 ---
 
-## 🧪 Zadania z konwersją
+## 🧪 Przetestuj
 
 1. Stwórz zmienne:
 ```python
@@ -137,33 +143,34 @@ Aby porównać z liczbą, musimy przekonwertować dane:
 
 Patrząc na te przykłady... na czym polega konwersja typów? 
 
-## 🔎 Mini projekt: czyszczenie tekstu
+### 🔎 Mini projekt: czyszczenie tekstu
 
 Stwórz zmienną z tekstem:
 ```
-    txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    txt = "Happiness can be found even in the darkest of times, if one only remembers to turn on the light."
 ```
 
 **Możesz skorzystać z Google, nie pytaj jednak o rozwiązanie AI - spróbuj ruszyć głową!** 💡 
 
 
-1. Wyświetl długość tekstu (liczbę znaków)
-2. Wyświetl pierwszą i ostatnią literę tekstu
-3. Wytnij słowo `"elit"` za pomocą indeksowania
-4. Usuń z tekstu wszystkie litery `"o"`
-5. Zastąp przecinki (`,`) kropkami (`.`)
-6. Sprawdź, na której pozycji pojawia się pierwsze wystąpienie litery `"i"`
-7. Policz, ile razy litera `"e"` występuje w tekście
-8. Zamień wszystkie litery na wielkie
-9. Odwróć cały ciąg znaków
+1. Wyświetl długość tekstu (liczbę znaków)  
+2. Wyświetl pierwszą i ostatnią literę tekstu  
+3. Wytnij słowo `"light"` za pomocą indeksowania  
+4. Usuń z tekstu wszystkie litery `"a"`  
+5. Zastąp przecinki (`,`) kropkami (`.`)  
+6. Sprawdź, na której pozycji pojawia się pierwsze wystąpienie litery `"e"`  
+7. Policz, ile razy litera `"o"` występuje w tekście  
+8. Zamień wszystkie litery na wielkie  
+9. Odwróć cały ciąg znaków  
 10. Utwórz nową zmienną `txt_clean`, w której:
-    - nie ma żadnych przecinków,
-    - tekst zaczyna się dużą literą,
-    - kończy się kropką (nawet jeśli wcześniej jej nie było)
-11. Sprawdź, czy tekst zawiera słowo `"dolor"`
+    - nie ma żadnych przecinków,  
+    - tekst zaczyna się dużą literą,  
+    - kończy się kropką (nawet jeśli wcześniej jej nie było)  
+11. Sprawdź, czy tekst zawiera słowo `"darkest"`  
 12. Podziel tekst na wyrazy i zapisz je jako listę
 
-💡 Pamiętaj, że możesz tworzyć kolejne zmienne pomocnicze, by nie nadpisywać  `txt = Lorem...`.
+💡 Pamiętaj, że możesz tworzyć zmienne pomocnicze, by nie nadpisywać `txt`.
+
 
 
 W kolejnej lekcji nauczymy się podejmować decyzje w kodzie – czyli jak powiedzieć Pythonowi:  

@@ -157,6 +157,5 @@ Na tej podstawie odpowiedz na poniższe pytania:
 3. Jaką wartość ma **nagroda 700 galeonów**, którą wygrała rodzina czarodziejów w przeliczeniu na PLN?
 
 4. Masz do dyspozycji **350 złotych**. Ile czarodziejskich monet możesz za to otrzymać, rozmienione od największych (najpierw galeony, potem sykle, na końcu knuty)?
-
    - Wynik podaj w formacie: **X galeonów, Y sykli, Z knutów**
    - Oblicz też, ile Ci zostanie (**reszta** w złotych).
