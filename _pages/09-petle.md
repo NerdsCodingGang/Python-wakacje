@@ -161,8 +161,6 @@ for owoc in owoce:
     print(owoc)
 ```
 
-![]({{ site.baseurl }}/assets/books.gif)
-
 
 ### 🧪 Zadanie
 
@@ -178,7 +176,7 @@ mag-3
 mag-50
 ```
 
-
+![]({{ site.baseurl }}/assets/books.gif)
 
 ## Pętla while
 
@@ -217,7 +215,7 @@ while counter > 0:
 
 W swoim pliku Python napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python to nie magia!".
 
-### Kontrolowanie pętli - break i continue
+## Kontrolowanie pętli 
 
 Czasami chcemy przedwcześnie zakończyć pętlę lub pominąć pewne iteracje. Do tego służą słowa kluczowe `break` i `continue`.
 
