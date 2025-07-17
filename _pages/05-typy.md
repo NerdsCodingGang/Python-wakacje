@@ -130,3 +130,33 @@ Zajrzyj do dokumentacji - metody String. Możesz skorzystać z Google, nie pytaj
 - Zmień wszystkie litery imienia i nazwiska na drukowane.
 - Jaką metodą usunąć z ciągu znaków “Programujemy w Pythonie” literę a?
 - ⭐ W jaki sposób zamienić ciąg znaków “123” na liczbę 123?
+
+
+## 🧙 Zadanie: Ile pieniędzy zabrać do Hogsmeade?
+
+> "The gold ones are Galleons. Seventeen silver Sickles to a Galleon and twenty-nine Knuts to a Sickle, it's easy enough."
+
+Czy zastanawialiście się kiedyś, ile złotówek musielibyście zabrać do Hogsmeade, żeby zrobić tam zakupy?
+W książce *„Quidditch przez wieki”* (wyd. Media Rodzina) sugerowana cena to 10 złotych, a obok podano 9 sykli i 7 knutów.  
+Na tej podstawie oszacowano wartość czarodziejskiej waluty:
+
+- 🟤 **1 knut ≈ 0,04 zł (4 grosze)**  
+- ⚪ **1 sykl = 29 knutów = 1,16 zł**  
+- 🟡 **1 galeon = 17 sykli = 19,72 zł**
+
+
+
+Na tej podstawie odpowiedz na poniższe pytania:
+
+**Zadania**
+
+1. Ile zapłacisz w złotówkach za różdżkę, która kosztuje **7 galeonów**?
+
+2. Ile kosztuje w złotówkach **gazeta** za **25 knutów**?
+
+3. Jaką wartość ma **nagroda 700 galeonów**, którą wygrała rodzina czarodziejów w przeliczeniu na PLN?
+
+4. Masz do dyspozycji **350 złotych**. Ile czarodziejskich monet możesz za to otrzymać, rozmienione od największych (najpierw galeony, potem sykle, na końcu knuty)?
+
+   - Wynik podaj w formacie: **X galeonów, Y sykli, Z knutów**
+   - Oblicz też, ile Ci zostanie (**reszta** w złotych).

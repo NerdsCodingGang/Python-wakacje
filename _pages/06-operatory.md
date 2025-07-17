@@ -94,6 +94,8 @@ Możesz je też porównywać:
 
 ## Zadania logiczne 🎯
 
-1. Czy 2024 jest podzielne przez 4?
+Niech python odpowie nam `True` or `False` 
+
+1. Czy 5012 jest podzielne przez 4 bez reszty?
 2. Czy `5 ** 2` to więcej niż `20 + 3`?
 3. Czy długość imienia `"Kasia"` jest większa niż 4?

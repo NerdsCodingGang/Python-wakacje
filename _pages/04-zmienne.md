@@ -109,6 +109,7 @@ print(a + b)
     print(a + b)
 
 4. Stwórz zmienną `PRZELICZNIK = 1.2` i **nie zmieniaj jej wartości** – to będzie Twoja stała.
+5. Policz ile a+b wynosi pomonozone przez przelicznik? 
 
 
 #### Zapamiętaj:
@@ -117,7 +118,5 @@ Dzięki nim nasz kod będzie **bardziej czytelny**, **krótszy** i **łatwiejszy
 
 
 W kolejnym kroku poznamy **typy danych** – czyli co dokładnie możemy przechowywać w zmiennych 🧠
-Możesz od razu wrzucać to do _posts.
-Chcesz teraz kontynuację: Typy danych (int, float, str, bool)?
 
 
