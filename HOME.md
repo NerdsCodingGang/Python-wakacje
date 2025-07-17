@@ -14,6 +14,10 @@ Cześć! Cieszymy się, że chcesz rozpocząć z nami swoją przygodę z program
 
 ![](./assets/snake.png)
 
+CZAS NA ODROBINĘ MAGII
+
 Gotowi? Zaczynamy!
 
 * ZACZNIJ TUTAJ ➡️ [O Pythonie](_pages/01-python.md)
+
+![](./assets/magic.gif)
