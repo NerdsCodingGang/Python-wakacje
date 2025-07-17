@@ -159,3 +159,35 @@ Na tej podstawie odpowiedz na poniższe pytania:
 4. Masz do dyspozycji **350 złotych**. Ile czarodziejskich monet możesz za to otrzymać, rozmienione od największych (najpierw galeony, potem sykle, na końcu knuty)?
    - Wynik podaj w formacie: **X galeonów, Y sykli, Z knutów**
    - Oblicz też, ile Ci zostanie (**reszta** w złotych).
+
+
+```python
+# wartości walut w złotówkach
+wartosc_knuta = 0.04
+wartosc_sykla = ...
+wartosc_galeona = ...
+
+# 🪄 1. Cena różdżki 
+rozdzka_cena = 
+print("Cena różdżki: ... zł")
+
+# 🗞️ 2. Cena gazety
+
+
+# 🏆 3. Nagroda 
+
+# 💰 4. Masz 350 zł – ile to galeonów, sykli i knutów?
+
+# najpierw liczymy galeony
+
+# potem sykle
+
+# na końcu knuty
+
+print("Za 350 zł dostaniesz:")
+print( "X galeonów,", "Y sykli,", "Z knutów")
+
+# reszta w złotówkach
+print("Reszta: ... ")
+
+```
