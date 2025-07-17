@@ -18,7 +18,22 @@ def get_random_color():
 get_random_color()
 ```
 
-Uruchommy nasz program i zobaczmy co się wydarzyło. Pojawił się wpisany przez nas napis. Czas poszukać kolorów!
+Uruchommy nasz program i zobaczmy co się wydarzyło. Pojawił się wpisany przez nas napis. 
+
+### Zadanie
+Spróbuj uzyć modułu random `import random` i wylosować liczbę od 0 do 255.
+
+```python
+import random
+
+# tutaj dodaj swój kod
+my_number = ...
+
+print(f"moja liczba to ... {my_number}")
+```
+Udało się? 
+
+Czas poszukać kolorów!
 
 ## Kolory w terminalu
 W terminalu możemy wyświetlać kolorowy tekst, używając specjalnych kodów zwanych kodami ANSI. Są to ciągi znaków, które zaczynają się od `\033[` i informują terminal, jak ma wyświetlić tekst – np. na czerwono, zielono albo niebiesko.
@@ -31,6 +46,8 @@ print("\033[32mA to zielony!\033[0m")
 print("\033[34mA ten niebieski!\033[0m")
 
 ```
+
+Dobra... wygląda to trochę dziwnie, ale jest prostrze niz myślisz 
 
 Zauważ:
 - 🔴 `\033[31m` = czerwony  
@@ -46,16 +63,27 @@ Jeśli nie widzisz kolorów – spróbuj uruchomić plik przez VSC terminal albo
 ### Co to jest RGB?
 RGB to skrót od Red, Green, Blue – czyli czerwony, zielony i niebieski. Skrót znany kazdemu, kto spróbował trochę zabawy z grafiką komputerową. Każdy kolor na ekranie komputera (i terminalu!) można stworzyć, mieszając te trzy kolory w różnych proporcjach. Na przykład:
 
-- RGB(255, 0, 0) = czysta czerwień
-- RGB(0, 255, 0) = czysta zieleń
-- RGB(0, 0, 255) = czysty niebieski
-- RGB(255, 255, 0) = żółty (czerwony + zielony)
+- RGB(255, 0, 0) = czysta czerwień 🔴
+- RGB(0, 255, 0) = czysta zieleń 🟢
+- RGB(0, 0, 255) = czysty niebieski 🔵
+
+- RGB(255, 255, 0) = żółty (czerwony + zielony) 🟡
+- RGB(255, 165, 0) = pomarańczowy 🟠
+- RGB(128, 0, 128) = fioletowy 🟣
+- RGB(139, 69, 19) = brązowy 🟤
+- RGB(0, 0, 0) = czarny ⚫ (czarny to "brak koloru")
+- RGB(255, 255, 255) = biały ⚪
+
+![]({{ site.baseurl }}/assets/RGB-model.png)
+
 
 W terminalu możemy korzystać z pełnych kolorów RGB, jeśli użyjemy tzw. true color ANSI kodu, który wygląda tak:
 
 ```
 \033[38;2;R;G;Bm
 ```
+
+gdzie `R`, `G`, `B` to znane nam wartości w palecie kolorów! 
 
 Przykład:
 
