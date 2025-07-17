@@ -333,7 +333,8 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
-🧪 Zadanie: Najpotężniejsza liczba
+### 🧪 Zadanie: Najpotężniejsza liczba
+
 Masz listę liczb przedstawiających moc magicznych iskier:
 ```
 moce = [3, 7, 2, 9, 5, 9, 4]

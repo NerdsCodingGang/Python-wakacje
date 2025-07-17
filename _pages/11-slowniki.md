@@ -314,23 +314,35 @@ Stwórz słownik `oceny_magii`, gdzie kluczami będą przedmioty: "alchemia", "p
 Możemy też tworzyć listy zawierające słowniki:
 
 ```python
-uczniowie = [
-    {"imie": "Anna", "wiek": 16, "klasa": "1a"},
-    {"imie": "Marek", "wiek": 15, "klasa": "1b"},
-    {"imie": "Kasia", "wiek": 16, "klasa": "1a"}
+uuczniowie = [
+    {"imie": "Dobiesława", "wiek": 16, "komnata": "komnata runiczna"},
+    {"imie": "Jaromira", "wiek": 17, "komnata": "komnata ziół"},
+    {"imie": "Wielimir", "wiek": 15, "komnata": "komnata mgieł"}
 ]
 
 # Wypisanie wszystkich uczniów
 for uczen in uczniowie:
-    print(f"{uczen['imie']} ma {uczen['wiek']} lat i chodzi do klasy {uczen['klasa']}")
+    print(f"{uczen['imie']} ma {uczen['wiek']} lat ~ nalezy do {uczen['komnata']}.")
 ```
 
 ### 🧪 Zadanie
 
-Stwórz listę "produkty" zawierającą słowniki z informacjami o produktach w sklepie (nazwa, cena, kategoria, dostępność). Następnie:
-1. Wypisz wszystkie produkty z kategorii "elektronika"
-2. Znajdź najtańszy produkt
-3. Policz ile jest produktów dostępnych (gdzie dostępność = True)
+Stwórz listę `przedmioty` zawierającą słowniki z informacjami o przedmiotach magicznych (nazwa, moc, kategoria, aktywność). 
+
+```python
+przedmioty = [
+    {"nazwa": "Eliksir Snu", "moc": 7, "kategoria": "alchemia", "aktywność": True},
+    {"nazwa": "Lustro Prawdziwe Ja", "moc": 9, "kategoria": "artefakt", "aktywność": False},
+    {"nazwa": "Kamień Filozofów", "moc": 5, "kategoria": "rytuał", "aktywność": True},
+    {"nazwa": "Napój Mocy", "moc": 8, "kategoria": "alchemia", "aktywność": True},
+    {"nazwa": "Flet Oczyszczenia", "moc": 4, "kategoria": "dźwięk", "aktywność": False}
+]
+```
+
+Następnie:
+1. Wypisz wszystkie przedmioty z kategorii **"alchemia"**
+2. Znajdź przedmioty o **największej mocy** (przypomnij sobie zadanie z iskrami z tematu o tablicach)
+3. Policz ile jest **aktywnych** przedmioty (`aktywność = True`)
 
 ### Zagnieżdżone słowniki
 
