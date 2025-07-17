@@ -349,32 +349,32 @@ Następnie:
 Słowniki mogą zawierać inne słowniki, co pozwala na tworzenie złożonych struktur danych:
 
 ```python
-firma = {
-    "nazwa": "TechCorp",
-    "adres": {
-        "ulica": "Technologiczna 1",
-        "miasto": "Warszawa",
-        "kod": "00-001"
+instytut = {
+    "nazwa": "Akademia Magii i Eliksirów",
+    "lokalizacja": {
+        "ulica": "Zaułek Feniksa 7¾",
+        "miasto": "Czarogród",
+        "kod": "77-777"
     },
-    "pracownicy": {
-        "jan_kowalski": {
-            "stanowisko": "programista",
-            "wynagrodzenie": 8000,
-            "doświadczenie": 3
+    "kadra": {
+        "ignacy_kociołek": {
+            "funkcja": "mistrz kodzenia",
+            "pensja": 15000,
+            "lata_praktyki": 120
         },
-        "anna_nowak": {
-            "stanowisko": "designer",
-            "wynagrodzenie": 7000,
-            "doświadczenie": 5
+        "celestyna_aurora": {
+            "funkcja": "zaklinaczka światła",
+            "pensja": 13200,
+            "lata_praktyki": 97
         }
     }
 }
 
-print(firma["pracownicy"]["jan_kowalski"]["stanowisko"])
-# >>> programista
+print(instytut["kadra"]["ignacy_kociołek"]["funkcja"])
+# >>> mistrz kodzenia
 ```
 
-### 🧪 Zadanie
+### 🧪 Zadanie 
 
 Stwórz słownik "biblioteka" reprezentujący system biblioteczny:
 - Klucze to tytuły książek
