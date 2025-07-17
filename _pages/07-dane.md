@@ -30,8 +30,9 @@ Można to też zapisać krócej:
 
 
 
-### 🧪 Zadanie - Czy możesz dołączyć do szkoły magii?
+### 🧪 Zadanie
 
+Czy możesz dołączyć do szkoły magii?
 Stwórz program, który sprawdzi, czy użytkownik spełnia wiekowe kryteria przyjęcia do szkoły magii 🏰
 
 1. Przypisz swoje imię do zmiennej `my_name`  
@@ -44,6 +45,9 @@ Stwórz program, który sprawdzi, czy użytkownik spełnia wiekowe kryteria przy
    `You can join the school of magic: True`  
    lub  
    `You can join the school of magic: False`
+
+
+![]({{ site.baseurl }}/assets/albus.gif)
 
 ## Indeksowanie znaków
 
@@ -171,7 +175,7 @@ Stwórz zmienną z tekstem:
 
 💡 Pamiętaj, że możesz tworzyć zmienne pomocnicze, by nie nadpisywać `txt`.
 
-
+---
 
 W kolejnej lekcji nauczymy się podejmować decyzje w kodzie – czyli jak powiedzieć Pythonowi:  
 *„jeśli użytkownik wpisał więcej niż 18 – wyświetl >>Możesz wejść<<”*  
