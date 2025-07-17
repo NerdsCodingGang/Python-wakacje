@@ -333,6 +333,8 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
+![]({{ site.baseurl }}/assets/elixir.gif)
+
 ### 🧪 Zadanie: Inwentarz eliksirów
 
 Profesor Infusor, mistrz naparów, zostawił na tablicy nieuporządkowaną listę eliksirów przygotowanych na czarodziejskie egzaminy. Twoim zadaniem jest uporządkować ją i nawarzyć 💥
@@ -361,4 +363,3 @@ Lista eliksirów:
 
 🔮 Bonus: Dodaj f-string, np. `print(f"{eliksir} ✅ Gotowy")` aby wyglądało ładniej
 
-![]({{ site.baseurl }}/assets/elixir.gif)

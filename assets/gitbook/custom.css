@@ -322,3 +322,9 @@
   color: #999;
   font-size: 0.85em;
 }
+
+
+.markdown-section img {
+    margin: 0 auto;
+    display: block;
+}
