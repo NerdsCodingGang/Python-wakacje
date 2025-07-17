@@ -9,14 +9,15 @@ Dlatego możemy wykorzystać pętle.
 
 Żeby powtórzyć coś kilkukrotnie potrzebujemy licznika - by wiedzieć, w którym momencie jesteśmy i czy powinnyśmy już skończyć, czy nadal powtarzać dany skrypt.
 
-Załóżmy, że chcemy w konsoli napisać pięć razy wiadomość "Cześć! Miło nam Cię powitać na kursie Pythona!". Możemy to zrobić w ten sposób:
+Załóżmy, że chcemy w konsoli napisać pięć razy wiadomość "Witajcie na kursie Pythona, adepci magii kodu!". Możemy to zrobić w ten sposób:
+
 
 ```python
-print("Cześć! Miło nam Cię powitać na kursie Pythona!")
-print("Cześć! Miło nam Cię powitać na kursie Pythona!")
-print("Cześć! Miło nam Cię powitać na kursie Pythona!")
-print("Cześć! Miło nam Cię powitać na kursie Pythona!")
-print("Cześć! Miło nam Cię powitać na kursie Pythona!")
+print("Witajcie na kursie Pythona, adepci magii kodu!")
+print("Witajcie na kursie Pythona, adepci magii kodu!")
+print("Witajcie na kursie Pythona, adepci magii kodu!")
+print("Witajcie na kursie Pythona, adepci magii kodu!")
+print("Witajcie na kursie Pythona, adepci magii kodu!")
 ```
 
 Trochę dużo pisania, prawda? Możemy ten kod uprościć!
@@ -47,13 +48,41 @@ Przeróbmy nasz kod z wiadomością!
 
 ```python
 for i in range(5):
-    print("Cześć! Miło nam Cię powitać na kursie Pythona!")
+    print("Witajcie na kursie Pythona, adepci magii kodu! ✨🧙‍♀️")
 ```
 
 Funkcja `range()` może przyjmować różne parametry:
 - `range(5)` - tworzy liczby od 0 do 4 (5 liczb)
 - `range(1, 6)` - tworzy liczby od 1 do 5 
 - `range(1, 11, 2)` - tworzy liczby od 1 do 10 co 2 (1, 3, 5, 7, 9)
+
+```python
+range(START, KONIEC, KROK)
+```
+
+Przetestuj przykłady powyzej:
+
+Porównaj:
+
+```python
+for i in range(5):
+    print("Liczba", i)
+
+print("---koniec---")
+
+for i in range(1, 6):
+    print("Liczba", i)
+
+print("---koniec---")
+
+for i in range(3, 7):
+    print("Liczba", i)
+
+print("---koniec---")
+
+for i in range(1, 11, 2):
+    print("Liczby z krokiem co 2:", i)
+```
 
 Możemy też liczyć w dół:
 
@@ -116,9 +145,40 @@ for i in range(1, 31):
     print(f"id-{i}")
 ```
 
+### Interowanie po sekwencji
+
+W Pythonie możemy również używać pętli `for` do iterowania po sekwencji np. tekście (stringu), listach i innych:
+
+```python
+for litera in "Python":
+    print(litera)
+```
+Zobacz tez
+
+```python
+owoce = ["jabłko", "banan", "wiśnia"]
+for owoc in owoce:
+    print(owoc)
+```
+
+![]({{ site.baseurl }}/assets/books.gif)
+
+
 ### 🧪 Zadanie
 
-Wykorzystaj powyższą pętlę, by nadać id 50 książkom. Zapisz kod w swoim pliku Python.
+W Wielkiej Bibliotece Magii trwa porządkowanie zbiorów. Twoim zadaniem jako asystenta Czarodzieja jest **przypisanie identyfikatorów magicznym księgom**.
+
+Księgi muszą mieć nadany identyfikator w formacie:
+
+```
+mag-1
+mag-2
+mag-3
+...
+mag-50
+```
+
+
 
 ## Pętla while
 
@@ -155,27 +215,7 @@ while counter > 0:
 
 ### 🧪 Zadanie
 
-W swoim pliku Python napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python jest super!".
-
-## Dodatkowe informacje o pętlach
-
-W Pythonie możemy również używać pętli `for` do iterowania po stringach, listach i innych sekwencjach:
-
-```python
-# Iterowanie po stringu
-for litera in "Python":
-    print(litera)
-```
-
-```python
-# Iterowanie po liście
-owoce = ["jabłko", "banan", "wiśnia"]
-for owoc in owoce:
-    print(owoc)
-```
-
-Te zastosowania poznasz w kolejnych lekcjach, ale warto już teraz wiedzieć, że pętle w Pythonie są bardzo wszechstronne!
-
+W swoim pliku Python napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python to nie magia!".
 
 ### Kontrolowanie pętli - break i continue
 
@@ -255,25 +295,12 @@ for i in range(1, 11):
     print(f"Liczba nieparzysta: {i}")
 ```
 
-### 🧪 Zadanie 1:
-
-Napisz pętlę, która przejdzie przez string "Programowanie w Pythonie" i:
-- Wypisze każdą literę
-- Zatrzyma się, gdy znajdzie literę "w"
-- Użyj `break` do zatrzymania pętli
-
-### 🧪 Zadanie 2:
-
-Napisz pętlę, która przejdzie przez string "Hello World 123!" i:
-- Wypisze tylko litery (pomijając spacje, cyfry i znaki interpunkcyjne)
-- Użyj `continue` do pomijania niechcianych znaków
-
 ### Łączenie break i continue
 
 Możemy używać obu słów kluczowych w tej samej pętli. Załóżmy, że chcemy policzyć samogłoski w tekście, ale zatrzymać się, gdy znajdziemy cyfrę:
 
 ```python
-tekst = "Python ma 5 samogłosek"
+tekst = "Python ma 6 literek"
 samogloski = "aeiouAEIOU"
 licznik_samoglosek = 0
 
@@ -291,18 +318,44 @@ for znak in tekst:
     print(f"Znaleziono samogłoskę: {znak}")
 ```
 
-### 🧪 Zadanie
+Warto już teraz wiedzieć, że pętle w Pythonie są baaaaardzo wszechstronne i bardzo przydatne!
+
+### 🧪 Zadanie 1
+
+Napisz pętlę, która przejdzie przez string "Programowanie w Pythonie to nie magia" i:
+- Wypisze każdą literę
+- Zatrzyma się, gdy znajdzie literę "w"
+- Użyj `break` do zatrzymania pętli
+
+### 🧪 Zadanie 2
+
+Przed Tobą fragment tajemniczego stringu: "Lumos Maxima! 9¾!" i:
+- Wypisze tylko LITERY (pomijając spacje, cyfry i znaki interpunkcyjne)
+- Użyj `continue` do pomijania niechcianych znaków
+
+💡 Dodatkowo możesz
+- użyć `.upper()` lub `.lower()`, by wypisać zaklęcie w jednolitej formie
+- sprawdzić jaki parametr w metodzie `print()` pozwoli zmienić znak końcowy tak by wyświetlić całe zaklęcie ciągiem a nie litera pod literą 😊🪄
+
+Podpowiedź istnieje w pythonie metoda, która sprawdzi czy znak jest literą czy nie. 
+
+### 🧪 Zadanie 3
 
 Napisz program, który:
-1. Przejdzie przez string "Uczę się programowania w tym roku"
+1. Przejdzie przez string "Uczę się programowania i czarowania w tym roku"
 2. Będzie szukał liter "p", "r", "o", "g", "r", "a", "m" w tej kolejności
 3. Pominie wszystkie inne znaki używając `continue`
 4. Zatrzyma się gdy znajdzie wszystkie litery słowa "program" używając `break`
 5. Wypisuje każdą znalezioną literę
 
-### Pętla while z break i continue
 
-Możemy też używać `break` i `continue` w pętlach `while`. Oto przykład prostego menu:
+
+## Pętla while z break i continue
+
+Niby oczywiste, ale lepiej to zazaczyć. Tak! 
+Możemy też używać `break` i `continue` w pętlach `while`. 
+
+Oto przykład prostego menu przetestuj go:
 
 ```python
 while True:
@@ -329,11 +382,17 @@ while True:
     print("Nieprawidłowy wybór, spróbuj ponownie.")
 ```
 
-### 🧪 Zadanie
+### 🪄 Zadanie
 
-Napisz program z pętlą `while`, który:
-1. Pyta użytkownika o jego ulubiony kolor
-2. Jeśli poda "czerwony", "zielony" lub "niebieski", program gratuluje wyboru i kończy działanie
-3. Jeśli poda "czarny", program mówi "To nie jest kolor!" i pyta ponownie
-4. Dla wszystkich innych kolorów program mówi "Fajny wybór!" i pyta ponownie
-5. Użyj `break` do zakończenia programu i `continue` do powrotu do pytania
+Twoja różdżka jeszcze nie została dostrojona. Aby ją aktywować, musisz wybrać swój **kolor mocy**.
+
+1. Napisz program z pętlą `while`, który pyta użytkownika o jego ulubiony kolor.
+2. Jeśli poda `"czerwony"`, `"zielony"` lub `"niebieski"` – wyświetl komunikat: `"Doskonale! Twoja różdżka rezonuje z tym kolorem."` i zakończ program (`break`)
+3. Jeśli poda `"czarny"` – wyświetl `"To nie jest kolor mocy! Spróbuj jeszcze raz."` i wróć do pytania (`continue`)
+4. Dla wszystkich innych kolorów – wyświetl `"Interesujący wybór! Ale spróbuj jeszcze raz..."` i wróć do pytania
+5. Użyj `break` i `continue`, aby kontrolować działanie pętli
+
+💡 *Program powinien działać, dopóki nie zostanie wybrany odpowiedni kolor magiczny.*
+
+
+![]({{ site.baseurl }}/assets/wand.webp)
