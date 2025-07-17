@@ -7,7 +7,7 @@ Zmienne, które dotychczas uzywamy, zawierały tylko jeden element - string, lic
 
 ```python
 pusta_lista = []
-lista = ["pomarańcza", 34, True, "mandolina", 45, [67, 56, "czerwony"]]
+lista = ["kapelusz", 34, True, "eliksir", 45, [67, 56, "czerwony"]]
 ```
 Wyświetl te dwie zmienne.
 
@@ -33,16 +33,16 @@ print(friends[3])
 # >>> John
 ```
 
-W swoim pliku Python stwórz teraz listę o nazwie "group", która zawiera imiona wszystkich osób z grupy, z którą pracujesz na warsztatach. Następnie wypisz w konsoli imię pierwszej zapisanej osoby.
+W swoim pliku Python stwórz teraz listę o nazwie "group", która zawiera imiona wszystkich osób z Twojej grupy, z którą pracujesz na warsztatach. Następnie wypisz w konsoli imię pierwszej i ostatniej zapisanej osoby.
 
-Podobnie jak stringi, długość listy możemy ustalić dzięki funkcji **len()**
+Podobnie jak stringi, długość listy możemy ustalić dzięki funkcji **len()** jak i skorzystać z ujemnego indeksu.
 
 ```python
 print(len(friends))
 # >>> 6
 ```
 
-Teraz wypisz w konsoli długość listy z imionami osób z Twojej grupy, a następnie wyloguj imię osoby, która jest zapisana jako ostatnia.
+**Dodajmy kolejne imię**
 
 Do dodawania nowego elementu służy metoda **append()**:
 
@@ -68,32 +68,34 @@ print(friends)
 
 Nadpisz ostatnio dodane do swojej listy imię innym. Raz jeszcze wypisz ostatnie imię w konsoli.
 
-Różne listy możemy dodać do siebie. Stwórz listę z imionami przyjaciół z pracy i drugą z imionami przyjaciół z imprez.
+Różne listy możemy dodać do siebie. 
+
+Do listy z imionami osób z grupy i chcemy dodać drugą listę z imionami przyjaciół z grupy obok.
 
 Aby stworzyć listę, w której znajdą się imiona wszystkich Twoich przyjaciół, możemy użyć operatora `+`:
 
 ```python
 work_friends = ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia"]
-party_friends = ["Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
+next_table = ["Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
 
-all_friends = work_friends + party_friends
+all_friends = work_friends + next_table
 
 print(all_friends)
 # >>> ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia", "Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
 ```
 
-Możemy też użyć metody `extend()`, która dodaje wszystkie elementy z jednej listy do drugiej:
+Możemy też użyć metody `extend()`, która dodaje wszystkie elementy z jednej listy do drugiej.
 
 ```python
 work_friends = ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia"]
-party_friends = ["Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
+next_table = ["Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
 
-work_friends.extend(party_friends)
+work_friends.extend(next_table)
 print(work_friends)
 # >>> ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia", "Asia", "Kamil", "Bartek", "Ola", "Weronika", "Czarek"]
 ```
 
-Sprawdź w konsoli, jak wygląda nowa lista powstała za pomocą `+` lub `extend()`.
+❓ Sprawdź w konsoli, jak wygląda nowa lista powstała za pomocą `+` lub `extend()`. Czy widzisz róznice w sposobie ich uzywania? 
 
 By "pobrać" kawałek listy używamy mechanizmu nazywanego "slicing" (krojenie). Określamy od którego elementu chcemy ciąć i na którym chcemy skończyć:
 
@@ -105,7 +107,7 @@ print(part)
 # >>> ["Marta", "Tomek", "John"]
 ```
 
-Zwróć uwagę, że `friends[1:4]` oznacza elementy od pozycji 1 (włącznie) do pozycji 4 (wyłącznie).
+Zwróć uwagę, że `friends[1:4]` oznacza elementy od pozycji 1 (**włącznie**) do pozycji 4 (**wyłącznie**). Czyli na ostatnim elemencie się zatrzymaj i go nie wliczaj.
 
 Stwórz teraz jeszcze jedną listę, której elementami będą pierwsze i drugie imię z listy "group". Użyj do tego slicing.
 
@@ -167,7 +169,21 @@ Do wyszukiwania pozycji elementu służy metoda **index()**. Zwraca ona indeks d
 
 ```python
 friends = ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia"]
+pozycja = friends.index("Marta")
+print(pozycja)
+```
 
+ale
+
+```python
+friends = ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia"]
+pozycja = friends.index("Adam") # błąd!
+print(pozycja)
+```
+
+Stąd:
+
+```python
 if "Marta" in friends:
     pozycja = friends.index("Marta")
     print(f"Marta znajduje się na pozycji {pozycja}")
@@ -220,7 +236,7 @@ for friend in friends:
     print(friend)
 ```
 
-To jest najbardziej pythonowy (prawdziwie pythoński) sposób!
+To jest najbardziej pythonowy (prawdziwie pythoński) sposób! 🐍
 
 Przećwiczmy to jeszcze wracając do naszej wiadomości. Powiedzmy, że chcemy ją spersonalizować i wyświetlić, np.
 
@@ -245,9 +261,9 @@ for friend in friends:
 
 Używając pętli `for` spraw, aby w konsoli pojawił się napis witający na kursie Pythona wszystkie osoby zapisane w Twojej liście "group". Tekst ma być następujący: "Cześć \[tu imię osoby\]! Miło nam Cię powitać na kursie Pythona!".
 
-### Enumerate - gdy potrzebujemy i indeksu i wartości
+### Ciekawostka: Enumerate 
 
-Czasami potrzebujemy zarówno indeksu elementu, jak i jego wartości. Do tego służy funkcja `enumerate()`:
+- gdy potrzebujemy i indeksu i wartości. Czasami potrzebujemy zarówno indeksu elementu, jak i jego wartości. Do tego służy funkcja `enumerate()`:
 
 ```python
 friends = ["Michał", "Marta", "Tomek", "John", "Natalia", "Ania", "Kasia"]
@@ -268,20 +284,23 @@ To wypisze:
 
 ### 🧪 Zadanie
 
-Wykorzystując pętlę znajdź i wypisz wszystkie samogłoski ze zdania: 
+W starym notatniku profesora zaklęć odnaleziono dziwną wiadomość:
 
-"Nad rzeczką opodal krzaczka, mieszkała kaczka-dziwaczka, lecz zamiast trzymać się rzeczki, robiła piesze wycieczki."
+> "Verba tantum huius scripti quae septem litteris longiora sunt verissima huius incantationis pars sunt — sed ea intellegit tantum is, cui mens sapientia illuminata est."
 
-Podpowiedź: string można traktować jak listę znaków ;)
+Legenda głosi, że **tylko słowa dłuższe niż 7 liter** są prawdziwymi składnikami zaklęcia, które można aktywować.
 
-```python
-zdanie = "Nad rzeczką opodal krzaczka, mieszkała kaczka-dziwaczka, lecz zamiast trzymać się rzeczki, robiła piesze wycieczki."
-samogloski = "aeiouAEIOU"
+Twoje zadanie:
 
-for litera in zdanie:
-    if litera in samogloski:
-        print(litera)
-```
+1. Zapisz ten tekst do zmiennej `tekst`  
+2. Podziel go na słowa (użyj pewnej metody typu string)  
+3. Utwórz pustą listę `zaklecie`  
+4. Przejdź przez każde słowo w pętli i:
+   - jeśli ma więcej niż 7 znaków, dodaj je do listy `zaklecie`
+5. Na końcu wypisz zawartość listy `zaklecie` – to Twoje aktywne słowa mocy ✨
+
+💡 Bonus: możesz usunąć znaki interpunkcyjne przed sprawdzaniem długości słowa (`.strip(".,")`), albo swoje zaklęcie połączyć metodą `join()`
+
 
 ### Dodatkowe metody list
 
@@ -314,11 +333,32 @@ lista.clear()
 print(lista)  # >>> []
 ```
 
-### 🧪 Zadanie
+### 🧪 Zadanie: Inwentarz eliksirów
 
-Stwórz listę zawierającą liczby od 1 do 10, następnie:
-1. Dodaj liczbę 11 na koniec
-2. Wstaw liczbę 0 na początku
-3. Usuń liczbę 5 z listy
-4. Wypisz wszystkie elementy używając pętli
-5. Posortuj listę i wypisz ponownie
+Profesor Infusor, mistrz naparów, zostawił na tablicy nieuporządkowaną listę eliksirów przygotowanych na czarodziejskie egzaminy. Twoim zadaniem jest uporządkować ją i nawarzyć 💥
+
+1. Stwórz listę `eliksiry` zawierającą tę listę (dodana ponizej)
+2. Dodaj nowy eliksir `"Eliksir Księżycowego Blasku"` na koniec listy
+3. Wstaw `"Eliksir Jedwabistego Snu"` na początek listy – to klasyk, który powinien być zawsze pierwszy!
+4. Usuń `"Mugolskie Krople"` – Profesor uznał, że to profanacja sztuki warzenia
+5. Wypisz w pętli wszystkie eliksiry z komentarzem `"✅ Gotowy"` przy każdym
+6. Posortuj listę alfabetycznie i wypisz jeszcze raz – teraz wszystko wygląda jak gotowe do prezentacji!
+
+``` 
+Lista eliksirów:
+
+"Eliksir Miłości",
+"Wywar Stokrotkowy",
+"Fortuna Potio",
+"Napar Prawdy",
+"Eliksir Niewidzialności",
+"Super Mocny na Skupienie",
+"Zapominalstwo wBbutelce",
+"Mugolskie Krople",
+"Anty-Sen o Smaku Kawy",
+"Eliksir Sportowy"
+```
+
+🔮 Bonus: Dodaj f-string, np. `print(f"{eliksir} ✅ Gotowy")` aby wyglądało ładniej
+
+![]({{ site.baseurl }}/assets/elixir.gif)
