@@ -71,8 +71,8 @@ Te operatory pozwalają porównywać wartości:
 
 Spróbuj:
 ```python
-    print(23 + 3 == 15 + 12)   # True
-    print(29 // 7 == 5)        # True
+    print(23 + 3 == 15 + 12)   # False
+    print(29 // 7 == 5)        # False
     print(27 % 8 == 3)         # True
 ```
 
