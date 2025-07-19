@@ -40,7 +40,7 @@ Stwórz program, który sprawdzi, czy użytkownik spełnia wiekowe kryteria przy
 3. Połącz imię i nazwisko w zmienną `full_name`  
 4. Zapytaj użytkownika o jego imię i wiek (za pomocą `input()`)  
 5. Wyświetl powitanie z imieniem użytkownika  
-6. Sprawdź, czy użytkownik ma od 11 do 17 lat włącznie  
+6. Sprawdź, czy użytkownik ma do 17 lat włącznie  
 7. Wypisz:  
    `You can join the school of magic: True`  
    lub  
