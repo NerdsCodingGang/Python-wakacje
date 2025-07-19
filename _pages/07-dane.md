@@ -168,8 +168,8 @@ Stwórz zmienną z tekstem:
 9. Odwróć cały ciąg znaków  
 10. Utwórz nową zmienną `txt_clean`, w której:
     - nie ma żadnych przecinków,  
-    - tekst zaczyna się dużą literą,  
-    - kończy się kropką (nawet jeśli wcześniej jej nie było)  
+    - by w tekście kazde słowo zaczynało się z duzej litery,  
+    - kończy się wykorzyknikiem (nawet jeśli wcześniej go tam nie było)  
 11. Sprawdź, czy tekst zawiera słowo `"darkest"`  
 12. Podziel tekst na wyrazy i zapisz je jako listę
 
