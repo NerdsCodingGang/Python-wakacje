@@ -98,9 +98,15 @@ W tym przypadku:
 - kończymy przed 0 (czyli na 1)
 - zmniejszamy o 1 (dlatego -1)
 
-Spróbuj w swoim pliku Python zapisać powyższą pętlę. Spraw, by kod powtórzył się 10 razy.
+Spróbuj w swoim pliku Python zapisać powyższą pętlę.
 
-Czas na nasze książki! Przypomnijmy - chcemy dodać identyfikator (id) kolejnym 30 książkom.
+*Dla chętnych: Spraw, by kod powtórzył się 10 razy.*
+
+---------
+
+### Czas na nasze książki w Magicznej Bibliotece! 
+
+Chcemy dodać identyfikator (id) kolejnym 30 książkom.
 
 Możemy to zrobić tak:
 
@@ -115,7 +121,8 @@ print("id-6")
 print("id-30")
 ```
 
-Ale taki kod zająłby bardzo wiele miejsca. Wykorzystajmy więc pętle! Zauważmy, że tym razem powtarzamy tę samą czynność, jednak string, który chcemy wyświetlić, zmienia się. Zwiększa się dokładnie o 1. Podobnie zachowuje się nasz licznik!
+Ale taki kod zająłby bardzo wiele miejsca 🥺 
+Wykorzystajmy więc pętle! Zauważmy, że tym razem powtarzamy tę samą czynność, jednak string, który chcemy wyświetlić, zmienia się. Zwiększa się dokładnie o 1. Podobnie zachowuje się nasz licznik!
 
 Sprawdź co się wydarzy, gdy spróbujesz wyświetlić w konsoli wartość naszego licznika (to jest zmienna więc wystarczy wpisać jej nazwę).
 
@@ -140,7 +147,15 @@ for i in range(1, 31):
 
 Zwróć uwagę, że musimy przekształcić liczbę `i` na string za pomocą `str(i)`, żeby móc ją połączyć ze stringiem "id-".
 
+#### F-string
 Możemy to również zrobić za pomocą f-stringów (formatowania stringów), co jest bardzo popularne w Pythonie:
+
+```
+f"Tekst tekst {dowolna_zmienna} tekst"
+```
+
+`dowolna_zmienna` moze być liczbą (`int` / `float`), a nawet boolean'em (`True/False`)!
+
 
 ```python
 for i in range(1, 31):
