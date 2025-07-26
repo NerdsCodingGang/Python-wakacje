@@ -160,7 +160,14 @@ Propozycja na obiad: Pieczone tofu z ziemniakami i fasolką szparagową.
 
 
 ### 🧪 Zadanie 3
-Co na prezent? 🎁 - Stwórz listę pomysłów na prezent dla swoich bliskich. Kiedy nadarzy się okazja, aby dać im prezent (święta, urodziny, rocznicę), program losowo wybierze jeden (i być może miejsca, w których możesz go zdobyć).
+
+🎁 Co na prezent? Stwórz program, który: Zawiera listę pomysłów na prezent dla Twoich bliskich (np. książka, bilety do kina, zestaw herbat).
+
+Program:
+- losowo wybiera jeden prezent z listy ( przyda się moduł `random`),
+- (opcjonalnie) podpowiada miejsce, gdzie można go kupić (np. Empik, Allegro, lokalny sklep).
+
+
 
 ### 🧪 Zadanie 4
 ```
