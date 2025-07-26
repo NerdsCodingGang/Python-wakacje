@@ -136,6 +136,8 @@ W zależności od odpowiedzi wyświetl:
 Rozszerzmy zadanie powyzej 🎩 Wylosuj (poszukaj biblioteki `random`) liczbę i zapisz do zmiennej.
 Poproś użytkownika o zgadnięcie.
 Wypisz `ciepło - czujesz magię` i `zimno - brrr!` w zależności od odpowiedzi.
-- jeśli roznica == 0 → "Brawo! Trafiłeś dokładnie!" → zakończ program
-- jeśli roznica <= 2 → "Ciepło – czujesz magię!"
-- jeśli roznica > 2 → "Zimno – brrr!"
+- jeśli liczby są takie same → "Brawo! Trafiłeś dokładnie!" → zakończ program
+- jeśli roznica mniejsze równe 2 → "Ciepło – czujesz magię!"
+- jeśli roznica większe niz 2 → "Zimno – brrr!"
+
+Poznaj wartosc bezwzględną `abs()` ;) 
