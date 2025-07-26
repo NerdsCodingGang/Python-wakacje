@@ -280,12 +280,14 @@ for litera in tekst:
     print(f"Sprawdzam literę: {litera}")
 ```
 
-Jeśli w naszym tekście nie ma litery "x", pętla przejdzie przez wszystkie znaki. Ale gdyby była, pętla zatrzymałaby się natychmiast po jej znalezieniu.
+Jeśli w naszym tekście nie ma litery "x", pętla przejdzie przez wszystkie znaki. 
+
+**Ale** gdyby była, pętla zatrzymałaby się natychmiast po jej znalezieniu.
 
 Spróbujmy z tekstem, który zawiera "x":
 
 ```python
-tekst = "Python to świetny język do nauki programowania"
+tekst = "Python to świetny język do nauki programowania xD"
 for litera in tekst:
     if litera == "x":
         print("Znaleziono literę x!")
