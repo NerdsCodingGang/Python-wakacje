@@ -136,12 +136,12 @@ menu(4)
 Na podstawie powyższego kodu utwórz menu użytkownika, w którym:
 
 Program wyświetla użytkownikowi listę kategorii posiłków:
-
+```
 1 – Śniadanie
 2 – Obiad
 3 – Kolacja
 4 – Deser
-
+```
 Użytkownik wpisuje numer kategorii (1–4).
 Program odpowiada konkretną propozycją posiłku w zależności od wybranej kategorii.
 Jeśli użytkownik wpisze inną liczbę niż 1–4, program wyświetla komunikat, ze nie zna takiego dania 
