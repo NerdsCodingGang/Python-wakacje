@@ -299,7 +299,13 @@ Twoje zadanie:
    - jeśli ma więcej niż 7 znaków, dodaj je do listy `zaklecie`
 5. Na końcu wypisz zawartość listy `zaklecie` – to Twoje aktywne słowa mocy ✨
 
-💡 Bonus: możesz usunąć znaki interpunkcyjne przed sprawdzaniem długości słowa (`.strip(".,")`), albo swoje zaklęcie połączyć metodą `join()`
+> ##### 💡 Podpowiedź
+>
+> Możesz usunąć znaki interpunkcyjne przed sprawdzaniem długości słowa (`.strip(".,")`)
+> Bonus: swoje zaklęcie wynikowe połączyć w jeden tekst metodą `join()`
+
+{: .block-tip }
+
 
 
 ### Dodatkowe metody list
