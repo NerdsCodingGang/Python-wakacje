@@ -3,8 +3,6 @@ title: 9. Pętle
 layout: post
 ---
 
-Link do discorda: `https://discord.gg/7xGPcejJ` 
-
 Załóżmy, że chcemy coś zrobić kilka razy, np. wysłać 5 takich samych wiadomości, albo nadać identyfikator 30 kolejnym książkom w naszym księgozbiorze. Robienie kilkukrotnie tej samej rzeczy jest... nuuuudne i mało optymalne. 
 
 Dlatego możemy wykorzystać pętle. 

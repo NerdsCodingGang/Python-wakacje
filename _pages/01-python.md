@@ -8,6 +8,10 @@ Witaj na warsztatach **Python od podstaw**.
 
 Mamy nadzieję, że te zajęcia będą dla Ciebie świetnym startem w odkrywaniu programowania! 😄
 
+Masz pytania? 
+
+👾 Link do discorda: [https://discord.gg/Ccm8uG8dGd](https://discord.gg/Ccm8uG8dGd)
+
 ## Wymagania wstępne
 
 Nie musisz znać żadnego języka programowania.  
