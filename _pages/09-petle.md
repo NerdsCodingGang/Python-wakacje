@@ -156,6 +156,12 @@ f"Tekst tekst {dowolna_zmienna} tekst"
 
 `dowolna_zmienna` moze być liczbą (`int` / `float`), a nawet boolean'em (`True/False`)!
 
+> ##### Uwaga!
+>
+> Pamiętaj, ze nawiasy klamrowe są tutaj niezbędne `{` `zmienna` `}`
+
+{: .block-warning }
+
 
 ```python
 for i in range(1, 31):
