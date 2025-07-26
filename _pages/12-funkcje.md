@@ -133,7 +133,32 @@ menu(choice)
 menu(4)
 ```
 
-Następnie utwórz menu użytkownika, w zależności od wybranej kategorii dania, zaproponuj użytkownikowi posiłek.
+Na podstawie powyższego kodu utwórz menu użytkownika, w którym:
+
+Program wyświetla użytkownikowi listę kategorii posiłków:
+
+1 – Śniadanie
+2 – Obiad
+3 – Kolacja
+4 – Deser
+
+Użytkownik wpisuje numer kategorii (1–4).
+Program odpowiada konkretną propozycją posiłku w zależności od wybranej kategorii.
+Jeśli użytkownik wpisze inną liczbę niż 1–4, program wyświetla komunikat, ze nie zna takiego dania 
+
+
+Przykład działania: 
+```
+Wybierz kategorię posiłku:
+1 - Śniadanie
+2 - Obiad
+3 - Kolacja
+4 - Deser
+Podaj numer kategorii: 2
+Propozycja na obiad: Pieczone tofu z ziemniakami i fasolką szparagową.
+```
+
+
 
 ### 🧪 Zadanie 3
 Co na prezent? 🎁 - Stwórz listę pomysłów na prezent dla swoich bliskich. Kiedy nadarzy się okazja, aby dać im prezent (święta, urodziny, rocznicę), program losowo wybierze jeden (i być może miejsca, w których możesz go zdobyć).
