@@ -207,7 +207,7 @@ Masz listę imion czarodziejów i czarownic, którym trzeba wysłać wiadomość
 Wiadomość zaczyna się od: Witaj + `<imię>`!, a potem dodajesz fragment listu, który zapisany jest w zmiennej.
 
 Napisz program, który:
-- Ma zdefiniowaną zmienną `letter_txt` (czyli treść listu),
+- Ma zdefiniowaną zmienną `list_tresc` (czyli treść listu),
 - Ma listę imion, np. `["Hermiona", "Harry", "Ron", "Luna"]`,
 
 Dla każdego imienia wypisuje spersonalizowaną wiadomość.
