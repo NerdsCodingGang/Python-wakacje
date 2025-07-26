@@ -368,22 +368,21 @@ Warto już teraz wiedzieć, że pętle w Pythonie są baaaaardzo wszechstronne i
 
 ### 🧪 Zadanie 1
 
-Napisz pętlę, która przejdzie przez string "Programowanie w Pythonie to nie magia" i:
+Napisz pętlę, która przejdzie przez string `"Programowanie w Pythonie to nie magia"` i:
 - Wypisze każdą literę
-- Zatrzyma się, gdy znajdzie literę "w"
-- Użyj `break` do zatrzymania pętli
+- Zatrzyma się, gdy znajdzie literę "w".  Użyj `break` do zatrzymania pętli
 
 ### 🧪 Zadanie 2
 
-Przed Tobą fragment tajemniczego stringu: "Lumos Maxima! 9¾!" i:
-- Wypisze tylko LITERY (pomijając spacje, cyfry i znaki interpunkcyjne)
-- Użyj `continue` do pomijania niechcianych znaków
+Przed Tobą fragment tajemniczego stringu: `"Lumos Maxima! 9¾!"` i:
+- Wypisze tylko LITERY (pomijając spacje, cyfry i znaki interpunkcyjne). Użyj `continue` do pomijania niechcianych znaków
 
+💡 Podpowiedź: **istnieje w pythonie metoda, która sprawdzi czy znak jest literą czy nie**. 
 💡 Dodatkowo możesz
 - użyć `.upper()` lub `.lower()`, by wypisać zaklęcie w jednolitej formie
 - sprawdzić jaki parametr w metodzie `print()` pozwoli zmienić znak końcowy tak by wyświetlić całe zaklęcie ciągiem a nie litera pod literą 😊🪄
 
-Podpowiedź istnieje w pythonie metoda, która sprawdzi czy znak jest literą czy nie. 
+
 
 ### 🧪 Zadanie 3
 
