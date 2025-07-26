@@ -162,7 +162,7 @@ for owoc in owoce:
 ```
 
 
-### 🧪 Zadanie
+### 🧪 Zadanie 1
 
 W Wielkiej Bibliotece Magii trwa porządkowanie zbiorów. Twoim zadaniem jako asystenta Czarodzieja jest **przypisanie identyfikatorów magicznym księgom**.
 
@@ -177,6 +177,29 @@ mag-50
 ```
 
 ![]({{ site.baseurl }}/assets/books.gif)
+
+### 🧪 Zadanie 2
+
+Masz listę imion czarodziejów i czarownic, którym trzeba wysłać wiadomość o przyjęciu do Szkoły Magii i Czarodziejstwa w Hogwarcie.
+Wiadomość zaczyna się od: Witaj + `<imię>`!, a potem dodajesz fragment listu, który zapisany jest w zmiennej.
+
+Napisz program, który:
+- Ma zdefiniowaną zmienną `letter_txt` (czyli treść listu),
+- Ma listę imion, np. `["Hermiona", "Harry", "Ron", "Luna"]`,
+
+Dla każdego imienia wypisuje spersonalizowaną wiadomość.
+
+✨ Przykład działania:
+Jeśli `list_tresc = "Z radością informujemy, że zostałeś przyjęty do Szkoły Magii i Czarodziejstwa w Hogwarcie!"`, to program powinien wypisać:
+
+```
+Witaj Hermiona! Z radością informujemy, że zostałeś przyjęty do Szkoły Magii i Czarodziejstwa w Hogwarcie!
+Witaj Harry! Z radością informujemy, że zostałeś przyjęty do Szkoły Magii i Czarodziejstwa w Hogwarcie!
+Witaj Ron! Z radością informujemy, że zostałeś przyjęty do Szkoły Magii i Czarodziejstwa w Hogwarcie!
+Witaj Luna! Z radością informujemy, że zostałeś przyjęty do Szkoły Magii i Czarodziejstwa w Hogwarcie!
+```
+
+
 
 ## Pętla while
 
@@ -213,7 +236,7 @@ while counter > 0:
 
 ### 🧪 Zadanie
 
-W swoim pliku Python napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python to nie magia!".
+Rozgrzewka: w swoim pliku napisz taką pętlę `while`, która 10 razy napisze w konsoli "Python to nie magia!".
 
 ## Kontrolowanie pętli 
 
@@ -394,3 +417,37 @@ Twoja różdżka jeszcze nie została dostrojona. Aby ją aktywować, musisz wyb
 
 
 ![]({{ site.baseurl }}/assets/wand.webp)
+
+### 🪄 Zadanie liczby 
+
+Twoim celem jest rzucić skuteczne zaklęcie – ale najpierw musisz odgadnąć tajną liczbę. 
+Każda wersja zadania jest trochę trudniejsza niż poprzednia.
+
+🔹 A. Podstawowa
+- Zapisz do zmiennej jakąś tajną liczbę (np. 7).
+- Poproś użytkownika, żeby wpisał liczbę i próbował ją zgadnąć.
+
+W pętli sprawdzaj:
+- jeśli wpisał za małą liczbę – wypisz „Zaklęcie za słabe!”
+- jeśli za dużą – wypisz „Zaklęcie za potężne!”
+- jeśli zgadł – wypisz „Brawo! Trafiłeś dokładnie!” i zakończ
+
+🔹 B. Ciut trudniej
+Wylosuj tajną liczbę z zakresu 1–20.
+Poproś użytkownika o zgadywanie, aż trafi.
+W zależności od tego, jak bardzo się pomylił:
+- jeśli różnica między jego liczbą a tajną jest mała (do 2) → wypisz „Ciepło – czujesz magię!”
+- jeśli różnica jest większa → wypisz „Zimno – brrr!”
+- jeśli trafił → wypisz „Brawo!” i zakończ
+
+🔹 C. Wartosć bezwzględna ;)
+Wylosuj tajną liczbę z zakresu 1–20.
+Użytkownik zgaduje aż trafi.
+Po każdej próbie:
+- sprawdź, czy nowa próba jest bliżej czy dalej od poprzedniej (uzyj funkcji `abs()`)
+
+wypisz:
+
+- „Cieplej – jesteś bliżej źródła magii!” jeśli jest lepiej
+- „Zimniej – oddalasz się od magii!” jeśli gorzej
+- „Brawo! Trafiłeś dokładnie!” jeśli trafił
