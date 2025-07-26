@@ -303,7 +303,6 @@ Twoje zadanie:
 >
 > Możesz usunąć znaki interpunkcyjne przed sprawdzaniem długości słowa (`.strip(".,")`)
 > Bonus: swoje zaklęcie wynikowe połączyć w jeden tekst metodą `join()`
-
 {: .block-tip }
 
 
