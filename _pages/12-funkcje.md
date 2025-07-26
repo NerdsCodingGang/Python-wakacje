@@ -142,12 +142,11 @@ Program wyświetla użytkownikowi listę kategorii posiłków:
 3 – Kolacja
 4 – Deser
 ```
-Użytkownik wpisuje numer kategorii (1–4).
-Program odpowiada konkretną propozycją posiłku w zależności od wybranej kategorii.
-Jeśli użytkownik wpisze inną liczbę niż 1–4, program wyświetla komunikat, ze nie zna takiego dania 
+- Użytkownik wpisuje numer kategorii (1–4).
+- Program odpowiada konkretną propozycją posiłku w zależności od wybranej kategorii.
+- Jeśli użytkownik wpisze inną liczbę niż 1–4, program wyświetla komunikat, ze nie zna takiego dania 
 
-
-Przykład działania: 
+**Przykład działania**
 ```
 Wybierz kategorię posiłku:
 1 - Śniadanie
